@@ -55,7 +55,7 @@ test('publish manifest allows one data file and preserves version and repository
   assert.equal(p.name, 'labrute-pixi-static-portrait');
   assert.match(p.version, /^\d+\.\d+\.\d+$/);
   assert.ok(fs.readFileSync('CHANGELOG.md', 'utf8').includes('[1.0.6]'));
-  assert.equal(p.repository.url, 'git+https://github.com/Zenoo/labrute-static-fla-parser.git');
+  assert.equal(p.repository.url, 'git+https://github.com/Zenoo/labrute-pixi-static-portrait.git');
   assert.equal(p.files.filter((name) => name.includes('symbol-data')).length, 1);
   assert.equal(p.exports['.'].import.types, './dist/Symbols.d.mts');
   assert.equal(p.exports['.'].require.types, './dist/Symbols.d.cts');

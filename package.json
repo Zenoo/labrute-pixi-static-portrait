@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zenoo/labrute-static-fla-parser.git"
+    "url": "git+https://github.com/Zenoo/labrute-pixi-static-portrait.git"
   },
   "bugs": {
-    "url": "https://github.com/Zenoo/labrute-static-fla-parser/issues"
+    "url": "https://github.com/Zenoo/labrute-pixi-static-portrait/issues"
   },
-  "homepage": "https://github.com/Zenoo/labrute-static-fla-parser#readme",
+  "homepage": "https://github.com/Zenoo/labrute-pixi-static-portrait#readme",
   "keywords": [
     "labrute",
     "mybrute",
