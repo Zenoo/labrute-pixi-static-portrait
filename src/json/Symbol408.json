@@ -4,21 +4,19 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol407",
-      "partIdx": "_p1"
+      "name": "Symbol405"
     },
     {
       "type": "symbol",
-      "name": "Symbol405",
-      "partIdx": "_p1"
+      "name": "Symbol407"
     }
   ],
   "frames": [
     [],
     [
       {
-        "type": "symbol",
         "name": "Symbol405",
+        "partIdx": "_p1",
         "transform": {
           "tx": 0.2,
           "ty": -1.85
@@ -31,8 +29,8 @@
     [],
     [
       {
-        "type": "symbol",
         "name": "Symbol407",
+        "partIdx": "_p1",
         "transform": {
           "tx": 0.05,
           "ty": -0.75

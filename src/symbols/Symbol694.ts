@@ -1,55 +1,43 @@
-import { Symbol } from '../common';
-import { Symbol693 } from './Symbol693';
-import { Symbol691 } from './Symbol691';
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
 import { Symbol689 } from './Symbol689';
+import { Symbol691 } from './Symbol691';
+import { Symbol693 } from './Symbol693';
 
 export const Symbol694: Symbol = {
   "type": "symbol",
   "name": "Symbol694",
   "parts": [
-    {
-      ...Symbol693,
-      "colorIdx": "_col1c"
-    },
-    {
-      ...Symbol691,
-      "colorIdx": "_col1c"
-    },
-    {
-      ...Symbol689,
-      "colorIdx": "_col1c"
-    }
+    Symbol689,
+    Symbol691,
+    Symbol693
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol689",
+        "colorIdx": "_col1c",
         "transform": {
-          "tx": 3.2,
-          "ty": 0,
           "b": 0.102691650390625,
-          "c": 0
+          "tx": 3.2
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol691",
+        "colorIdx": "_col1c",
         "transform": {
-          "tx": 3.2,
-          "ty": 0
+          "tx": 3.2
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol693",
+        "colorIdx": "_col1c",
         "transform": {
-          "tx": 3.2,
-          "ty": 0
+          "tx": 3.2
         }
       }
     ]

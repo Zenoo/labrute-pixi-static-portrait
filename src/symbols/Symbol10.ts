@@ -1,0 +1,26 @@
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
+
+
+export const Symbol10: Symbol = {
+  "type": "symbol",
+  "name": "Symbol10",
+  "parts": [
+    {
+      "type": "svg",
+      "name": "Symbol10",
+      "svg": "<svg height=\"84px\" width=\"84px\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 42, 42)\"><path d=\"M28.25 -28.3 Q40.0 -16.55 40.0 0.0 40.0 16.55 28.25 28.25 16.55 40.0 0.0 40.0 -16.55 40.0 -28.3 28.25 -40.0 16.55 -40.0 0.0 -40.0 -16.55 -28.3 -28.3 -16.55 -40.0 0.0 -40.0 16.55 -40.0 28.25 -28.3\" fill=\"url(#gradient0)\" fill-rule=\"evenodd\" stroke=\"none\"/></g><defs><radialGradient cx=\"0\" cy=\"0\" gradientTransform=\"matrix(0.0475, 0.0, 0.0, 0.0475, 0.0, 0.0)\" gradientUnits=\"userSpaceOnUse\" id=\"gradient0\" r=\"819.2\" spreadMethod=\"pad\"><stop offset=\"0.4117647058823529\" stop-color=\"#2b0000\"/><stop offset=\"1.0\" stop-color=\"#110000\" stop-opacity=\"0.0\"/></radialGradient></defs></svg>",
+      "offset": {
+        "x": 42,
+        "y": 42
+      }
+    }
+  ],
+  "frames": [
+    [
+      {
+        "name": "Symbol10"
+      }
+    ]
+  ]
+};

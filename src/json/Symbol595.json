@@ -4,31 +4,23 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol594",
-      "colorIdx": "_col3"
+      "name": "Symbol590"
     },
     {
       "type": "symbol",
-      "name": "Symbol592",
-      "colorIdx": "_col2"
+      "name": "Symbol592"
     },
     {
       "type": "symbol",
-      "name": "Symbol592",
-      "colorIdx": "_col2"
-    },
-    {
-      "type": "symbol",
-      "name": "Symbol590",
-      "colorIdx": "_col3"
+      "name": "Symbol594"
     }
   ],
   "frames": [
     [],
     [
       {
-        "type": "symbol",
         "name": "Symbol590",
+        "colorIdx": "_col3",
         "transform": {
           "tx": 0.3,
           "ty": -8.3
@@ -37,8 +29,8 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol592",
+        "colorIdx": "_col2",
         "transform": {
           "tx": 0.3,
           "ty": -8.3
@@ -48,8 +40,8 @@
     [],
     [
       {
-        "type": "symbol",
         "name": "Symbol592",
+        "colorIdx": "_col2",
         "transform": {
           "tx": 0.3,
           "ty": -8.3
@@ -59,8 +51,8 @@
     [],
     [
       {
-        "type": "symbol",
         "name": "Symbol594",
+        "colorIdx": "_col3",
         "transform": {
           "tx": 0.3,
           "ty": -8.3

@@ -4,15 +4,14 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol110",
-      "partIdx": "_p8"
+      "name": "Symbol110"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol110",
+        "partIdx": "_p8",
         "transform": {
           "tx": 2,
           "ty": 4.15
@@ -21,8 +20,8 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol110",
+        "partIdx": "_p8",
         "transform": {
           "tx": 2,
           "ty": 4.15
@@ -31,8 +30,8 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol110",
+        "partIdx": "_p8",
         "transform": {
           "tx": 2,
           "ty": 4.15
@@ -41,8 +40,8 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol110",
+        "partIdx": "_p8",
         "transform": {
           "tx": 2,
           "ty": 4.15
@@ -51,8 +50,8 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol110",
+        "partIdx": "_p8",
         "transform": {
           "tx": 2,
           "ty": 4.15
@@ -61,8 +60,8 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol110",
+        "partIdx": "_p8",
         "transform": {
           "tx": 2,
           "ty": 4.15
@@ -71,8 +70,8 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol110",
+        "partIdx": "_p8",
         "transform": {
           "tx": 2,
           "ty": 4.15
@@ -81,8 +80,8 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol110",
+        "partIdx": "_p8",
         "transform": {
           "tx": 2,
           "ty": 4.15
@@ -91,8 +90,8 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol110",
+        "partIdx": "_p8",
         "transform": {
           "tx": 2,
           "ty": 4.15
@@ -101,8 +100,8 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol110",
+        "partIdx": "_p8",
         "transform": {
           "tx": 2,
           "ty": 4.15
@@ -111,8 +110,8 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol110",
+        "partIdx": "_p8",
         "transform": {
           "tx": 2,
           "ty": 4.15
@@ -121,8 +120,8 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol110",
+        "partIdx": "_p8",
         "transform": {
           "tx": 2,
           "ty": 4.15

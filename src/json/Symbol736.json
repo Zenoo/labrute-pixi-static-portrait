@@ -4,40 +4,41 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol729",
-      "colorIdx": "_col0"
+      "name": "Symbol729"
     },
     {
       "type": "symbol",
-      "name": "Symbol735",
-      "partIdx": "_p7"
+      "name": "Symbol735"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol735",
+        "partIdx": "_p7",
         "transform": {
           "tx": 0.55,
           "ty": 1.55
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol729",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
+        "colorIdx": "_col0",
         "transform": {
-          "tx": 1.4,
-          "ty": -12.45,
           "a": 0.9917755126953125,
-          "d": 0.9917755126953125,
           "b": 0.122100830078125,
-          "c": -0.122100830078125
+          "c": -0.122100830078125,
+          "d": 0.9917755126953125,
+          "tx": 1.4,
+          "ty": -12.45
+        },
+        "colorTransform": {
+          "add": [
+            -16,
+            -50,
+            -80,
+            0
+          ]
         }
       }
     ]

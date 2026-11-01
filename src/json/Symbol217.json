@@ -1,0 +1,22 @@
+{
+  "type": "symbol",
+  "name": "Symbol217",
+  "parts": [
+    {
+      "type": "svg",
+      "name": "Symbol217",
+      "svg": "<svg height=\"9.7px\" width=\"8.4px\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 6.85, 7.6)\"><path d=\"M-0.95 -5.25 L-0.75 -4.2 -0.55 -2.7 Q-0.35 -1.4 -0.5 0.05 L-1.9 -0.1 Q-3.55 -0.6 -4.85 -1.7 L-4.7 -2.1 Q-3.7 -4.05 -2.0 -5.4 L-1.05 -5.45 -0.95 -5.25\" fill=\"#ffffff\" fill-rule=\"evenodd\" stroke=\"none\"/></g></svg>",
+      "offset": {
+        "x": 6.85,
+        "y": 7.6
+      }
+    }
+  ],
+  "frames": [
+    [
+      {
+        "name": "Symbol217"
+      }
+    ]
+  ]
+}

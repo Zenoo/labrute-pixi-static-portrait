@@ -10,12 +10,7 @@
   "frames": [
     [
       {
-        "type": "symbol",
-        "name": "Symbol249",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "name": "Symbol249"
       }
     ]
   ]

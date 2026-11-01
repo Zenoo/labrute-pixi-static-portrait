@@ -1,0 +1,26 @@
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
+
+
+export const Symbol521: Symbol = {
+  "type": "symbol",
+  "name": "Symbol521",
+  "parts": [
+    {
+      "type": "svg",
+      "name": "Symbol521",
+      "svg": "<svg height=\"13.45px\" width=\"9.6px\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 2.7, 2.3)\"><path d=\"M0.6 8.3 Q1.6 7.45 1.7 6.45 2.0 4.3 -0.7 2.75 -0.5 1.05 1.2 0.0 L1.65 -0.3 1.8 0.3 1.8 0.9 4.5 3.65 Q5.05 4.1 4.85 4.7 3.85 7.7 -0.5 9.15 L0.6 8.3\" fill=\"#ffffff\" fill-rule=\"evenodd\" stroke=\"none\"/><path d=\"M0.6 8.3 L-0.5 9.15 Q3.85 7.7 4.85 4.7 5.05 4.1 4.5 3.65 L1.8 0.9 1.8 0.3 1.65 -0.3 1.2 0.0 Q-0.5 1.05 -0.7 2.75 2.0 4.3 1.7 6.45 1.6 7.45 0.6 8.3 Z\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.3019608\" stroke-width=\"0.05\"/></g></svg>",
+      "offset": {
+        "x": 2.7,
+        "y": 2.3
+      }
+    }
+  ],
+  "frames": [
+    [
+      {
+        "name": "Symbol521"
+      }
+    ]
+  ]
+};

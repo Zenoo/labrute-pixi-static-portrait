@@ -1,0 +1,12 @@
+{
+  "gender": "male",
+  "sprites": 51,
+  "clothingChoices": 15,
+  "status": "Preview up to date",
+  "mobile": {
+    "overflow": false,
+    "previewFirst": true,
+    "previewWidth": 364,
+    "canvasWidth": 364
+  }
+}

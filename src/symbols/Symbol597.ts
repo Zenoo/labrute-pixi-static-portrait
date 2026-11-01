@@ -1,95 +1,28 @@
-import { Symbol } from '../common';
+// Generated from perso.swf by npm run export:swf.
+import type { FramePart, Symbol } from '../common';
 import { Symbol596 } from './Symbol596';
+
+const frame0: FramePart[] = [
+  {
+    "name": "Symbol596",
+    "partIdx": "_p6"
+  }
+];
 
 export const Symbol597: Symbol = {
   "type": "symbol",
   "name": "Symbol597",
   "parts": [
-    {
-      ...Symbol596,
-      "partIdx": "_p6"
-    }
+    Symbol596
   ],
   "frames": [
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ]
+    frame0,
+    frame0,
+    frame0,
+    frame0,
+    frame0,
+    frame0,
+    frame0,
+    frame0
   ]
 };

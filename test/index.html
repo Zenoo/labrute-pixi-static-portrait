@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portrait playground · LaBrute</title>
+    <style>
+      /* Shared visual language with the fighter playground. */
+      :root {
+        color-scheme: light;
+        font:
+          15px/1.5 system-ui,
+          sans-serif;
+        color: #253340;
+        background: #f4f5f7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header,
+      /* Desktop: settings on the left, preview and comparison on the right. */
+      main {
+        max-width: 1440px;
+        margin: auto;
+        padding: 24px 32px;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 27px;
+        letter-spacing: -0.8px;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 17px;
+      }
+
+      p {
+        margin: 4px 0 0;
+        color: #657281;
+      }
+
+      .badge {
+        background: #e1f1ec;
+        color: #24644f;
+        border-radius: 30px;
+        padding: 6px 12px;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 320px minmax(0, 1fr);
+        gap: 24px;
+        padding-top: 0;
+        align-items: start;
+      }
+
+      .panel {
+        background: white;
+        border: 1px solid #dee3e9;
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      .section {
+        padding: 20px;
+        border-bottom: 1px solid #e9edf1;
+      }
+
+      .section:last-child {
+        border-bottom: 0;
+      }
+
+      /* Reusable form controls and grouped appearance fields. */
+      .fields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px 12px;
+        margin-top: 16px;
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .wide {
+        grid-column: 1 / -1;
+      }
+
+      select,
+      input[type='text'],
+      button {
+        font: inherit;
+        border: 1px solid #cdd5de;
+        border-radius: 7px;
+        padding: 9px 10px;
+        color: #253340;
+        background: white;
+        width: 100%;
+      }
+
+      select {
+        cursor: pointer;
+      }
+
+      button {
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      button:hover {
+        background: #f0f5f4;
+        border-color: #789b91;
+      }
+
+      button.primary {
+        background: #226752;
+        border-color: #226752;
+        color: white;
+      }
+
+      button:disabled {
+        opacity: 0.5;
+        cursor: default;
+      }
+
+      :focus-visible {
+        outline: 3px solid #84b8ff;
+        outline-offset: 3px;
+      }
+
+      .check {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        min-height: 35px;
+      }
+
+      input[type='checkbox'] {
+        accent-color: #226752;
+        width: 17px;
+        height: 17px;
+      }
+
+      input[type='range'] {
+        width: 100%;
+        accent-color: #226752;
+      }
+
+      input[type='color'] {
+        width: 100%;
+        height: 36px;
+        padding: 3px;
+        border: 1px solid #cdd5de;
+        border-radius: 6px;
+        background: white;
+        cursor: pointer;
+      }
+
+      summary {
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .help {
+        font-size: 12px;
+        margin-top: 10px;
+      }
+
+      .stage-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 22px;
+        gap: 12px;
+        border-bottom: 1px solid #e9edf1;
+      }
+
+      /* The canvas fills this fixed-height viewport; JavaScript centers the portrait. */
+      #preview {
+        width: 100%;
+        height: 520px;
+        position: relative;
+        background-color: #faf9f6;
+        overflow: hidden;
+      }
+
+      #preview.grid {
+        background-image: linear-gradient(#dce1e680 1px, transparent 1px),
+          linear-gradient(90deg, #dce1e680 1px, transparent 1px);
+        background-size: 32px 32px;
+      }
+
+      canvas {
+        display: block;
+      }
+
+      #status {
+        font-size: 13px;
+        color: #657281;
+      }
+
+      #status[data-state='error'] {
+        color: #b42318;
+      }
+
+      .playback {
+        padding: 18px 22px;
+        border-top: 1px solid #e9edf1;
+      }
+
+      .toolbar {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .toolbar button {
+        width: auto;
+        min-width: 90px;
+      }
+
+      .toolbar label {
+        margin-left: auto;
+      }
+
+      .timeline {
+        margin-top: 18px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .timeline label {
+        flex: 1;
+      }
+
+      output {
+        font-variant-numeric: tabular-nums;
+        font-size: 13px;
+        white-space: nowrap;
+        color: #657281;
+      }
+
+      .footnote {
+        font-size: 13px;
+        margin: 14px 4px;
+      }
+
+      /* Source captures use their own grid and can scroll at native image size. */
+      .comparison {
+        margin-top: 24px;
+      }
+
+      .comparison-frames {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        padding: 16px;
+      }
+
+      .comparison-frames figure {
+        margin: 0;
+        min-width: 0;
+        overflow: hidden;
+      }
+
+      .comparison-frames.actual-size {
+        grid-template-columns: repeat(3, 640px);
+        overflow-x: auto;
+      }
+
+      .comparison-frames figcaption {
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      .comparison-surface {
+        width: 640px;
+        height: 480px;
+        transform-origin: top left;
+      }
+
+      .comparison-viewport {
+        position: relative;
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+        background: white;
+        border: 1px solid #dee3e9;
+      }
+
+      .comparison-viewport canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      #comparison-reference {
+        position: absolute;
+      }
+
+      .comparison-status {
+        padding: 0 20px 20px;
+        font-variant-numeric: tabular-nums;
+      }
+
+      #appearance-controls[hidden] {
+        display: none;
+      }
+
+      @media (max-width: 800px) {
+        header,
+        main {
+          padding: 18px;
+        }
+
+        main {
+          grid-template-columns: 1fr;
+        }
+
+        .preview-column {
+          grid-row: 1;
+        }
+
+        #preview {
+          height: 380px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+        }
+      }
+
+      /* Static portrait controls extend the shared fighter panel styles. */
+      [hidden] {
+        display: none !important;
+      }
+
+      select,
+      input,
+      textarea {
+        min-width: 0;
+      }
+
+      input[type='number'],
+      textarea {
+        font: inherit;
+        border: 1px solid #cdd5de;
+        border-radius: 7px;
+        padding: 9px 10px;
+        color: #253340;
+        background: white;
+        width: 100%;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 150px;
+        font:
+          12px/1.6 ui-monospace,
+          monospace;
+      }
+
+      #preview {
+        height: 520px;
+      }
+
+      #preview canvas {
+        position: absolute;
+        inset: 0;
+      }
+
+      #preview.transparent {
+        background-color: #faf9f6;
+        background-image: none;
+      }
+
+      #preview.transparent.grid {
+        background-image: repeating-conic-gradient(#e9edf1 0 25%, #fafbfc 0 50%);
+        background-size: 24px 24px;
+      }
+
+      .preview-actions {
+        padding: 18px 22px;
+        border-top: 1px solid #e9edf1;
+      }
+
+      .preview-actions .toolbar {
+        justify-content: space-between;
+      }
+
+      .preview-actions .toolbar label {
+        margin-left: 0;
+      }
+
+      .preview-actions .toolbar button {
+        min-width: 140px;
+      }
+
+      .color-field {
+        position: relative;
+      }
+
+      .color-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+      }
+
+      .color-label output {
+        font:
+          11px ui-monospace,
+          monospace;
+        font-weight: 400;
+      }
+
+      #parts small {
+        color: #657281;
+        font-size: 11px;
+        font-weight: 400;
+      }
+
+      .comparison .toolbar {
+        margin-top: 16px;
+      }
+
+      .comparison .toolbar button,
+      .comparison .toolbar a {
+        width: auto;
+      }
+
+      .comparison .toolbar a {
+        color: #226752;
+        font-weight: 600;
+        font-size: 13px;
+      }
+
+      .comparison-frames {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .comparison-frames:empty {
+        display: none;
+      }
+
+      .capture {
+        margin: 0;
+        min-width: 0;
+      }
+
+      .capture figcaption {
+        font-size: 13px;
+      }
+
+      .capture canvas {
+        width: 100%;
+        height: auto;
+        border: 1px solid #dee3e9;
+        background: #fafbfc;
+      }
+
+      .comparison-frames.actual-size {
+        grid-template-columns: repeat(4, 640px);
+      }
+
+      .comparison-empty {
+        margin: 0 20px 20px;
+        padding: 28px 20px;
+        border: 1px dashed #cdd5de;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 13px;
+      }
+
+      #comparison-status[data-state='error'] {
+        color: #b42318;
+      }
+
+      @media (max-width: 800px) {
+        #preview {
+          height: 380px;
+        }
+
+        header {
+          align-items: flex-start;
+          flex-wrap: wrap;
+        }
+
+        .stage-heading {
+          align-items: flex-start;
+          flex-wrap: wrap;
+        }
+
+        .preview-column {
+          min-width: 0;
+        }
+      }
+
+      @media (max-width: 440px) {
+        .comparison-frames {
+          grid-template-columns: 1fr;
+        }
+
+        header,
+        main {
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+
+        .section {
+          padding: 16px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+      }
+
+      @media (max-width: 800px) {
+        .preview-column {
+          display: contents;
+        }
+
+        /* On phones, put settings between the live preview and source comparison. */
+        .preview-column > section:first-child {
+          grid-row: 1;
+        }
+
+        main > aside {
+          grid-row: 2;
+        }
+
+        .preview-column > .comparison {
+          grid-row: 3;
+        }
+
+        .preview-column > .footnote {
+          grid-row: 4;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Portrait playground</h1>
+        <p>Explore static appearances. Changes update the preview automatically.</p>
+      </div>
+      <span class="badge">LaBrute · Pixi Static Portrait</span>
+    </header>
+    <main>
+      <!-- Appearance controls are grouped so advanced inputs stay out of the way. -->
+      <aside class="panel" aria-label="Portrait settings">
+        <section class="section">
+          <h2>Character</h2>
+          <div class="fields">
+            <label class="wide">
+              Gender
+              <select id="gender">
+                <option value="male">Male brute</option>
+                <option value="female">Female brute</option>
+              </select>
+            </label>
+            <label>
+              Facing
+              <select id="facing">
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+              </select>
+            </label>
+            <label>
+              Scale
+              <select id="scale">
+                <option value="0.5">0.5×</option>
+                <option value="1">1×</option>
+                <option value="1.5">1.5×</option>
+                <option value="2">2×</option>
+                <option value="3" selected>3×</option>
+                <option value="4">4×</option>
+              </select>
+            </label>
+          </div>
+        </section>
+        <details class="section" open>
+          <summary>Body parts</summary>
+          <p class="help">
+            Choose an outfit or mix individual variations. Source numbering is zero-based.
+          </p>
+          <div class="fields">
+            <label class="wide">
+              Clothing preset
+              <select id="clothing"></select>
+            </label>
+          </div>
+          <p class="help">Presets coordinate clothing, legwear, and available details.</p>
+          <div class="fields" id="parts"></div>
+        </details>
+        <details class="section">
+          <summary>Colors</summary>
+          <p class="help">
+            Colors update live. Select a slot below to highlight its region in white.
+          </p>
+          <div class="fields">
+            <label class="wide">
+              Highlight region
+              <select id="highlight">
+                <option value="">No highlight</option>
+              </select>
+            </label>
+          </div>
+          <div class="fields" id="colors"></div>
+        </details>
+        <details class="section">
+          <summary>Import appearance</summary>
+          <div class="fields">
+            <label class="wide">
+              Body string
+              <input
+                id="body-string"
+                type="text"
+                spellcheck="false"
+                maxlength="11"
+                aria-describedby="body-help"
+              />
+            </label>
+            <p id="body-help" class="help wide">
+              11 hexadecimal digits. Enter a complete string to apply it automatically. Individual
+              body controls update this string.
+            </p>
+            <label class="wide">
+              Color string
+              <input
+                id="color-string"
+                type="text"
+                spellcheck="false"
+                maxlength="32"
+                aria-describedby="color-help"
+              />
+            </label>
+            <p id="color-help" class="help wide">
+              32 digits: two palette-index digits per color slot, matching the fighter playground.
+              Color pickers can override the imported palette afterward.
+            </p>
+          </div>
+        </details>
+        <section class="section"><button id="reset" type="button">Reset portrait</button></section>
+      </aside>
+      <div class="preview-column">
+        <!-- Preview backgrounds are visual aids; downloaded PNGs stay transparent. -->
+        <section class="panel" aria-label="Static portrait preview">
+          <div class="stage-heading">
+            <h2>Live preview</h2>
+            <span id="status" role="status" aria-live="polite">Starting renderer…</span>
+          </div>
+          <div id="preview" class="grid transparent" aria-label="Character portrait canvas"></div>
+          <div class="preview-actions">
+            <div class="toolbar">
+              <button id="download" type="button" class="primary" disabled>Download PNG</button>
+              <label class="check">
+                <input id="grid" type="checkbox" checked />
+                Grid
+              </label>
+              <label class="check">
+                <input id="transparent" type="checkbox" />
+                Transparent
+              </label>
+              <label>
+                Background
+                <input id="background" type="color" value="#faf9f6" />
+              </label>
+            </div>
+            <p class="help">
+              The preview fits the panel. PNGs keep the selected scale and a transparent background.
+            </p>
+          </div>
+        </section>
+        <!-- Frozen SWF captures are separate from the enhanced portrait preview. -->
+        <section class="panel comparison" aria-label="SWF source comparison">
+          <div class="section">
+            <h2>Compare with the source SWF</h2>
+            <p class="help">
+              Compare the same appearance with original vector artwork rendered by local Ruffle.
+              Geometry captures exclude the presentation outline, selection highlight, and iris
+              recoloring.
+            </p>
+            <div class="toolbar">
+              <button id="compare" type="button">Compare current appearance</button>
+              <button id="cases" type="button">Compare appearance cases</button>
+              <label class="check">
+                <input id="actual-size" type="checkbox" />
+                View at 100%
+              </label>
+              <a id="report" hidden>Download report</a>
+            </div>
+          </div>
+          <div id="captures" class="comparison-frames"></div>
+          <p id="comparison-empty" class="comparison-empty">
+            Compare an appearance to see the source, Pixi render, overlay, and pixel differences.
+          </p>
+          <p id="comparison-status" class="comparison-status" role="status" aria-live="polite">
+            No appearance compared yet.
+          </p>
+        </section>
+        <p class="footnote">
+          Frozen source references apply decoded appearance and frame choices; they do not execute
+          the original ActionScript decoder.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

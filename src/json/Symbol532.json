@@ -4,67 +4,63 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol514",
-      "colorIdx": "_col0"
+      "name": "Symbol514"
     },
     {
       "type": "symbol",
-      "name": "Symbol531",
-      "partIdx": "_p7"
+      "name": "Symbol531"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol531",
+        "partIdx": "_p7",
         "transform": {
-          "tx": 0.55,
-          "ty": 1.55,
           "a": 0.9969329833984375,
-          "d": 0.9969329833984375,
           "b": -0.0749359130859375,
-          "c": 0.0749359130859375
+          "c": 0.0749359130859375,
+          "d": 0.9969329833984375,
+          "tx": 0.55,
+          "ty": 1.55
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol514",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
-        "transform": {
-          "tx": 0,
-          "ty": 0
+        "colorIdx": "_col0",
+        "colorTransform": {
+          "add": [
+            -16,
+            -50,
+            -80,
+            0
+          ]
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol531",
+        "partIdx": "_p7",
         "transform": {
-          "tx": 0.55,
-          "ty": 1.55,
           "a": 0.9969329833984375,
-          "d": 0.9969329833984375,
           "b": -0.0749359130859375,
-          "c": 0.0749359130859375
+          "c": 0.0749359130859375,
+          "d": 0.9969329833984375,
+          "tx": 0.55,
+          "ty": 1.55
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol514",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
-        "transform": {
-          "tx": 0,
-          "ty": 0
+        "colorIdx": "_col0",
+        "colorTransform": {
+          "add": [
+            -16,
+            -50,
+            -80,
+            0
+          ]
         }
       }
     ]

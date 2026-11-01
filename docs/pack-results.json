@@ -1,0 +1,51 @@
+{
+  "size": 247964,
+  "unpackedSize": 1338113,
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "size": 2741,
+      "mode": 420
+    },
+    {
+      "path": "README.md",
+      "size": 11436,
+      "mode": 420
+    },
+    {
+      "path": "dist/symbol-data.cjs",
+      "size": 1026649,
+      "mode": 420
+    },
+    {
+      "path": "dist/Symbols.d.cts",
+      "size": 37655,
+      "mode": 420
+    },
+    {
+      "path": "dist/Symbols.d.mts",
+      "size": 37655,
+      "mode": 420
+    },
+    {
+      "path": "dist/Symbols.d.ts",
+      "size": 37655,
+      "mode": 420
+    },
+    {
+      "path": "dist/Symbols.js",
+      "size": 135301,
+      "mode": 420
+    },
+    {
+      "path": "dist/Symbols.mjs",
+      "size": 45751,
+      "mode": 420
+    },
+    {
+      "path": "package.json",
+      "size": 3270,
+      "mode": 420
+    }
+  ]
+}

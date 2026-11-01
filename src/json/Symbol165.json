@@ -4,15 +4,14 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol164",
-      "partIdx": "_p2"
+      "name": "Symbol164"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol164",
+        "partIdx": "_p2",
         "transform": {
           "tx": -0.1,
           "ty": 16.4

@@ -1,34 +1,21 @@
-import { Symbol } from '../common';
+// Generated from perso.swf by npm run export:swf.
+import type { FramePart, Symbol } from '../common';
 import { Symbol720 } from './Symbol720';
+
+const frame0: FramePart[] = [
+  {
+    "name": "Symbol720"
+  }
+];
 
 export const Symbol721: Symbol = {
   "type": "symbol",
   "name": "Symbol721",
   "parts": [
-    {
-      ...Symbol720
-    }
+    Symbol720
   ],
   "frames": [
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol720",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol720",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ]
+    frame0,
+    frame0
   ]
 };

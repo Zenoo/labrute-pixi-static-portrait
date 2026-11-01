@@ -1,52 +1,39 @@
-import { Symbol } from '../common';
+// Generated from perso.swf by npm run export:swf.
+import type { FramePart, Symbol } from '../common';
 import { Symbol211 } from './Symbol211';
 import { Symbol213 } from './Symbol213';
+
+const placement0: FramePart = {
+  "name": "Symbol211",
+  "colorIdx": "_col3",
+  "transform": {
+    "ty": 1.25
+  }
+};
 
 export const Symbol214: Symbol = {
   "type": "symbol",
   "name": "Symbol214",
   "parts": [
-    {
-      ...Symbol211,
-      "colorIdx": "_col3"
-    },
-    {
-      ...Symbol213,
-      "colorIdx": "_col2"
-    }
+    Symbol211,
+    Symbol213
   ],
   "frames": [
     [
-      {
-        "type": "symbol",
-        "name": "Symbol211",
-        "transform": {
-          "tx": 0,
-          "ty": 1.25
-        }
-      }
+      placement0
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol213",
+        "colorIdx": "_col2",
         "transform": {
-          "tx": 0,
-          "ty": 9.5,
           "a": 1.1502838134765625,
-          "d": 1.2355804443359375,
           "b": -0.335205078125,
-          "c": 0
+          "d": 1.2355804443359375,
+          "ty": 9.5
         }
       },
-      {
-        "type": "symbol",
-        "name": "Symbol211",
-        "transform": {
-          "tx": 0,
-          "ty": 1.25
-        }
-      }
+      placement0
     ]
   ]
 };

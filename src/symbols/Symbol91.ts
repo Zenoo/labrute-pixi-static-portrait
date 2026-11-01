@@ -1,195 +1,107 @@
-import { Symbol } from '../common';
+// Generated from perso.swf by npm run export:swf.
+import type { FramePart, Symbol } from '../common';
 import { Symbol71 } from './Symbol71';
-import { Symbol90 } from './Symbol90';
-import { Symbol85 } from './Symbol85';
-import { Symbol80 } from './Symbol80';
 import { Symbol76 } from './Symbol76';
+import { Symbol80 } from './Symbol80';
+import { Symbol85 } from './Symbol85';
+import { Symbol90 } from './Symbol90';
+
+const placement0: FramePart = {
+  "name": "Symbol71",
+  "colorIdx": "_col0",
+  "colorTransform": {
+    "add": [
+      -16,
+      -50,
+      -80,
+      0
+    ]
+  }
+};
+
+const frame0: FramePart[] = [
+  placement0
+];
 
 export const Symbol91: Symbol = {
   "type": "symbol",
   "name": "Symbol91",
   "parts": [
-    {
-      ...Symbol71,
-      "colorIdx": "_col0"
-    },
-    {
-      ...Symbol71,
-      "colorIdx": "_col2"
-    },
-    {
-      ...Symbol90,
-      "partIdx": "_p1"
-    },
-    {
-      ...Symbol85,
-      "partIdx": "_p1"
-    },
-    {
-      ...Symbol80,
-      "partIdx": "_p1"
-    },
-    {
-      ...Symbol76,
-      "partIdx": "_p1"
-    }
+    Symbol71,
+    Symbol76,
+    Symbol80,
+    Symbol85,
+    Symbol90
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol76",
+        "partIdx": "_p1",
         "transform": {
-          "tx": -3.8,
-          "ty": -0.6,
           "a": -0.798675537109375,
-          "d": 0.798675537109375,
           "b": 0.599151611328125,
-          "c": 0.599151611328125
+          "c": 0.599151611328125,
+          "d": 0.798675537109375,
+          "tx": -3.8,
+          "ty": -0.6
         }
       },
-      {
-        "type": "symbol",
-        "name": "Symbol71",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
+      placement0
     ],
+    frame0,
     [
       {
-        "type": "symbol",
-        "name": "Symbol71",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
         "name": "Symbol80",
+        "partIdx": "_p1",
         "transform": {
           "tx": -3.5,
           "ty": -0.8
         }
       },
-      {
-        "type": "symbol",
-        "name": "Symbol71",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
+      placement0
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol85",
+        "partIdx": "_p1",
         "transform": {
           "tx": -8.55,
           "ty": 4.35
         }
       },
-      {
-        "type": "symbol",
-        "name": "Symbol71",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
+      placement0
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol90",
+        "partIdx": "_p1",
         "transform": {
           "tx": -11.55,
           "ty": 3.25
         }
       },
-      {
-        "type": "symbol",
-        "name": "Symbol71",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
+      placement0
     ],
+    frame0,
     [
       {
-        "type": "symbol",
         "name": "Symbol71",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
+        "colorIdx": "_col2",
         "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol71",
-        "colorOffset": {
-          "r": -110,
-          "g": -90,
-          "b": -80
-        },
-        "transform": {
-          "tx": 0,
-          "ty": 0,
           "a": 1.028564453125,
           "d": 1.028564453125
+        },
+        "colorTransform": {
+          "add": [
+            -110,
+            -90,
+            -80,
+            0
+          ]
         }
       },
-      {
-        "type": "symbol",
-        "name": "Symbol71",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
+      placement0
     ]
   ]
 };

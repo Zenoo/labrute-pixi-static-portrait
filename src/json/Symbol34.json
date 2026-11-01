@@ -4,50 +4,45 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol21",
-      "colorIdx": "_col2"
+      "name": "Symbol23"
     },
     {
       "type": "symbol",
-      "name": "Symbol29",
-      "partIdx": "_p1"
+      "name": "Symbol25"
     },
     {
       "type": "symbol",
-      "name": "Symbol25",
-      "colorIdx": "_col3"
+      "name": "Symbol29"
     },
     {
       "type": "symbol",
-      "name": "Symbol23",
-      "colorIdx": "_col2"
+      "name": "Symbol21"
     },
     {
       "type": "symbol",
-      "name": "Symbol33",
-      "partIdx": "_p1"
+      "name": "Symbol33"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol23",
+        "colorIdx": "_col2",
         "transform": {
-          "tx": -10.3,
-          "ty": -10.45,
           "a": 0.894439697265625,
-          "d": 1.0316162109375,
           "b": -0.058563232421875,
-          "c": 0.067535400390625
+          "c": 0.067535400390625,
+          "d": 1.0316162109375,
+          "tx": -10.3,
+          "ty": -10.45
         }
       }
     ],
     [],
     [
       {
-        "type": "symbol",
         "name": "Symbol25",
+        "colorIdx": "_col3",
         "transform": {
           "tx": -1.4,
           "ty": 1
@@ -58,8 +53,8 @@
     [],
     [
       {
-        "type": "symbol",
         "name": "Symbol29",
+        "partIdx": "_p1",
         "transform": {
           "tx": -12.6,
           "ty": -5
@@ -68,28 +63,31 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol33",
+        "partIdx": "_p1",
         "transform": {
           "tx": -0.45,
           "ty": 3.35
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol21",
-        "colorOffset": {
-          "r": -110,
-          "g": -90,
-          "b": -80
-        },
+        "colorIdx": "_col2",
         "transform": {
-          "tx": 0.85,
-          "ty": -14.15,
           "a": 1.0095672607421875,
-          "d": 0.9970703125,
           "b": 0.124298095703125,
-          "c": -0.1227569580078125
+          "c": -0.1227569580078125,
+          "d": 0.9970703125,
+          "tx": 0.85,
+          "ty": -14.15
+        },
+        "colorTransform": {
+          "add": [
+            -110,
+            -90,
+            -80,
+            0
+          ]
         }
       }
     ]

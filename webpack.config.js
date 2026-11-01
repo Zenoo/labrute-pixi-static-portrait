@@ -1,47 +1,31 @@
-/* eslint-disable prefer-named-capture-group */
-const path = require('path');
-const webpack = require('webpack');
-const dotenv = require('dotenv');
+const path = require('node:path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const swfMiddleware = require('./test/swfMiddleware.cjs');
 
-dotenv.config();
-
-module.exports = (env, argv) => {
-  const dev = argv.mode === 'development';
-
-  const plugins = [
-    new HtmlWebpackPlugin(),
-    new webpack.DefinePlugin({
-      'process.env': JSON.stringify(process.env)
-    })
-  ];
-
-  if (dev) {
-    plugins.push(new webpack.HotModuleReplacementPlugin());
-  }
-
-  return {
-    entry: './test/index.ts',
-    devtool: dev ? 'source-map' : 'none',
-    mode: 'development',
-    module: {
-      rules: [
-        {
-          test: /\.(js|ts)$/,
-          exclude: /(node_modules|bower_components)/,
-          loader: 'babel-loader',
-          options: { presets: ['@babel/env'] }
-        }
-      ]
+// This development server keeps the Ruffle runtime and SWF comparison local.
+module.exports = () => ({
+  mode: 'development',
+  devtool: 'source-map',
+  entry: './test/index.mjs',
+  experiments: { topLevelAwait: true },
+  output: {
+    path: path.resolve(__dirname, '.playground'),
+    filename: 'playground.js',
+    clean: true,
+  },
+  plugins: [new HtmlWebpackPlugin({ template: 'test/index.html' })],
+  devServer: {
+    host: '127.0.0.1',
+    port: 3000,
+    static: [
+      {
+        directory: path.resolve(__dirname, 'node_modules/@ruffle-rs/ruffle'),
+        publicPath: '/ruffle/',
+      },
+    ],
+    setupMiddlewares(middlewares, server) {
+      swfMiddleware(server.app);
+      return middlewares;
     },
-    resolve: { extensions: ['*', '.js', '.ts'] },
-    output: {
-      path: path.resolve(__dirname, 'dist2/'),
-      filename: 'bundle.js'
-    },
-    devServer: {
-      port: 3000,
-    },
-    plugins
-  };
-};
+  },
+});

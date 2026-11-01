@@ -4,53 +4,51 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol649",
-      "colorIdx": "_col4"
+      "name": "Symbol649"
     },
     {
       "type": "symbol",
-      "name": "Symbol657",
-      "colorIdx": "_col3"
+      "name": "Symbol657"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol657",
+        "colorIdx": "_col3",
         "transform": {
           "tx": -13.35,
           "ty": -8.15
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol649",
+        "colorIdx": "_col4",
         "transform": {
-          "tx": 1.55,
-          "ty": -2.45,
           "a": 0.9076690673828125,
-          "d": 0.9076690673828125
+          "d": 0.9076690673828125,
+          "tx": 1.55,
+          "ty": -2.45
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol657",
+        "colorIdx": "_col3",
         "transform": {
           "tx": -13.35,
           "ty": -8.15
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol649",
+        "colorIdx": "_col4",
         "transform": {
-          "tx": 1.55,
-          "ty": -2.45,
           "a": 0.9076690673828125,
-          "d": 0.9076690673828125
+          "d": 0.9076690673828125,
+          "tx": 1.55,
+          "ty": -2.45
         }
       }
     ]

@@ -4,17 +4,16 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol347"
+      "name": "Symbol340"
     },
     {
       "type": "symbol",
-      "name": "Symbol340"
+      "name": "Symbol347"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol340",
         "transform": {
           "tx": 0.25,
@@ -24,7 +23,6 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol347",
         "transform": {
           "tx": 0.25,

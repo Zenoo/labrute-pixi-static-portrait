@@ -4,89 +4,95 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol483",
-      "colorIdx": "_col0"
+      "name": "Symbol483"
     },
     {
       "type": "symbol",
-      "name": "Symbol485",
-      "colorIdx": "_col2"
+      "name": "Symbol484"
     },
     {
       "type": "symbol",
-      "name": "Symbol484",
-      "partIdx": "_p7"
+      "name": "Symbol485"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol484",
+        "partIdx": "_p7",
         "transform": {
           "tx": 0.3,
           "ty": 3.3
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol483",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
+        "colorIdx": "_col0",
         "transform": {
-          "tx": -4.2,
-          "ty": -13.7,
           "a": 0.955169677734375,
-          "d": 0.955169677734375,
           "b": -0.2927398681640625,
-          "c": 0.2927398681640625
+          "c": 0.2927398681640625,
+          "d": 0.955169677734375,
+          "tx": -4.2,
+          "ty": -13.7
+        },
+        "colorTransform": {
+          "add": [
+            -16,
+            -50,
+            -80,
+            0
+          ]
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol484",
+        "partIdx": "_p7",
         "transform": {
           "tx": 0.3,
           "ty": 3.3
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol485",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
+        "colorIdx": "_col2",
         "transform": {
-          "tx": -4.2,
-          "ty": -13.7,
           "a": 0.955169677734375,
-          "d": 0.955169677734375,
           "b": -0.2927398681640625,
-          "c": 0.2927398681640625
+          "c": 0.2927398681640625,
+          "d": 0.955169677734375,
+          "tx": -4.2,
+          "ty": -13.7
+        },
+        "colorTransform": {
+          "add": [
+            -16,
+            -50,
+            -80,
+            0
+          ]
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol483",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
+        "colorIdx": "_col0",
         "transform": {
-          "tx": -4.2,
-          "ty": -13.7,
           "a": 0.955169677734375,
-          "d": 0.955169677734375,
           "b": -0.2927398681640625,
-          "c": 0.2927398681640625
+          "c": 0.2927398681640625,
+          "d": 0.955169677734375,
+          "tx": -4.2,
+          "ty": -13.7
+        },
+        "colorTransform": {
+          "add": [
+            -16,
+            -50,
+            -80,
+            0
+          ]
         }
       }
     ]

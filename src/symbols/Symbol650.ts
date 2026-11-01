@@ -1,54 +1,42 @@
-import { Symbol } from '../common';
+// Generated from perso.swf by npm run export:swf.
+import type { FramePart, Symbol } from '../common';
 import { Symbol649 } from './Symbol649';
 import { Symbol281 } from './Symbol281';
+
+const placement0: FramePart = {
+  "name": "Symbol649",
+  "colorIdx": "_col4",
+  "transform": {
+    "a": 0.9076690673828125,
+    "d": 0.9076690673828125,
+    "tx": 1.55,
+    "ty": -2.45
+  }
+};
 
 export const Symbol650: Symbol = {
   "type": "symbol",
   "name": "Symbol650",
   "parts": [
-    {
-      ...Symbol649,
-      "colorIdx": "_col4"
-    },
-    {
-      ...Symbol281,
-      "colorIdx": "_col3"
-    }
+    Symbol649,
+    Symbol281
   ],
   "frames": [
     [
-      {
-        "type": "symbol",
-        "name": "Symbol649",
-        "transform": {
-          "tx": 1.55,
-          "ty": -2.45,
-          "a": 0.9076690673828125,
-          "d": 0.9076690673828125
-        }
-      }
+      placement0
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol281",
+        "colorIdx": "_col3",
         "transform": {
-          "tx": 6.7,
-          "ty": -2.25,
           "a": 3.2306976318359375,
-          "d": 3.2306976318359375
+          "d": 3.2306976318359375,
+          "tx": 6.7,
+          "ty": -2.25
         }
       },
-      {
-        "type": "symbol",
-        "name": "Symbol649",
-        "transform": {
-          "tx": 1.55,
-          "ty": -2.45,
-          "a": 0.9076690673828125,
-          "d": 0.9076690673828125
-        }
-      }
+      placement0
     ]
   ]
 };

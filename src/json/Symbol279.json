@@ -14,22 +14,12 @@
   "frames": [
     [
       {
-        "type": "symbol",
-        "name": "Symbol277",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "name": "Symbol277"
       }
     ],
     [
       {
-        "type": "symbol",
-        "name": "Symbol278",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "name": "Symbol278"
       }
     ]
   ]

@@ -8,8 +8,7 @@
     },
     {
       "type": "symbol",
-      "name": "Symbol74",
-      "colorIdx": "_col3"
+      "name": "Symbol74"
     },
     {
       "type": "symbol",
@@ -20,32 +19,22 @@
     [],
     [
       {
-        "type": "symbol",
-        "name": "Symbol75",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "name": "Symbol75"
       },
       {
-        "type": "symbol",
         "name": "Symbol74",
+        "colorIdx": "_col3",
         "transform": {
-          "tx": -0.9,
-          "ty": -0.55,
           "a": 3.4643096923828125,
-          "d": 2.7031707763671875,
           "b": -1.29888916015625,
-          "c": 0.6588897705078125
+          "c": 0.6588897705078125,
+          "d": 2.7031707763671875,
+          "tx": -0.9,
+          "ty": -0.55
         }
       },
       {
-        "type": "symbol",
-        "name": "Symbol72",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "name": "Symbol72"
       }
     ]
   ]

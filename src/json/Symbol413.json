@@ -4,89 +4,95 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol59",
-      "colorIdx": "_col0"
+      "name": "Symbol59"
     },
     {
       "type": "symbol",
-      "name": "Symbol66",
-      "colorIdx": "_col4"
+      "name": "Symbol412"
     },
     {
       "type": "symbol",
-      "name": "Symbol412",
-      "partIdx": "_p7"
+      "name": "Symbol66"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol412",
+        "partIdx": "_p7",
         "transform": {
           "tx": 0.3,
           "ty": 3.3
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol59",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
+        "colorIdx": "_col0",
         "transform": {
-          "tx": -4.2,
-          "ty": -13.7,
           "a": 0.955169677734375,
-          "d": 0.955169677734375,
           "b": -0.2927398681640625,
-          "c": 0.2927398681640625
+          "c": 0.2927398681640625,
+          "d": 0.955169677734375,
+          "tx": -4.2,
+          "ty": -13.7
+        },
+        "colorTransform": {
+          "add": [
+            -16,
+            -50,
+            -80,
+            0
+          ]
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol412",
+        "partIdx": "_p7",
         "transform": {
           "tx": 0.3,
           "ty": 3.3
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol66",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
+        "colorIdx": "_col4",
         "transform": {
-          "tx": -4.2,
-          "ty": -13.7,
           "a": 0.955169677734375,
-          "d": 0.955169677734375,
           "b": -0.2927398681640625,
-          "c": 0.2927398681640625
+          "c": 0.2927398681640625,
+          "d": 0.955169677734375,
+          "tx": -4.2,
+          "ty": -13.7
+        },
+        "colorTransform": {
+          "add": [
+            -16,
+            -50,
+            -80,
+            0
+          ]
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol59",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
+        "colorIdx": "_col0",
         "transform": {
-          "tx": -4.2,
-          "ty": -13.7,
           "a": 0.955169677734375,
-          "d": 0.955169677734375,
           "b": -0.2927398681640625,
-          "c": 0.2927398681640625
+          "c": 0.2927398681640625,
+          "d": 0.955169677734375,
+          "tx": -4.2,
+          "ty": -13.7
+        },
+        "colorTransform": {
+          "add": [
+            -16,
+            -50,
+            -80,
+            0
+          ]
         }
       }
     ]

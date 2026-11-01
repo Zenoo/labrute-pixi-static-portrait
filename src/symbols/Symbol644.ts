@@ -1,0 +1,26 @@
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
+
+
+export const Symbol644: Symbol = {
+  "type": "symbol",
+  "name": "Symbol644",
+  "parts": [
+    {
+      "type": "svg",
+      "name": "Symbol644",
+      "svg": "<svg height=\"22.6px\" width=\"22.1px\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 11.05, 11.25)\"><path d=\"M-8.85 -3.05 Q-8.35 -5.6 -6.45 -6.95 L-3.4 -8.95 -2.25 -9.25 0.35 -8.95 3.7 -8.3 9.05 -7.5 Q6.0 -4.85 4.75 -3.0 3.5 -1.15 2.95 1.05 L0.95 -0.25 -2.8 -2.55 -3.8 -3.0 -7.5 -3.2 -8.85 -3.05\" fill=\"#ffffff\" fill-rule=\"evenodd\" stroke=\"none\"/><path d=\"M2.95 1.05 L2.9 1.35 2.8 1.8 Q2.55 3.1 2.55 4.5 2.55 6.55 2.95 9.25 L2.9 9.3 -3.65 4.8 Q-5.25 3.7 -7.65 3.6 -9.05 2.15 -9.05 0.6 L-9.05 -1.4 -9.0 -2.05 -8.85 -3.05 -7.5 -3.2 -3.8 -3.0 -2.8 -2.55 0.95 -0.25 2.95 1.05\" fill=\"#d6baba\" fill-rule=\"evenodd\" stroke=\"none\"/><path d=\"M-8.85 -3.05 Q-8.35 -5.6 -6.45 -6.95 L-3.4 -8.95 -2.25 -9.25 0.35 -8.95 3.7 -8.3 9.05 -7.5 Q6.0 -4.85 4.75 -3.0 3.5 -1.15 2.95 1.05 L2.9 1.35 2.8 1.8 Q2.55 3.1 2.55 4.5 2.55 6.55 2.95 9.25 L3.0 9.35 2.9 9.3 -3.65 4.8 Q-5.25 3.7 -7.65 3.6 -9.05 2.15 -9.05 0.6 L-9.05 -1.4 -9.0 -2.05 -8.85 -3.05 Z\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.4\" stroke-width=\"0.05\"/></g></svg>",
+      "offset": {
+        "x": 11.05,
+        "y": 11.25
+      }
+    }
+  ],
+  "frames": [
+    [
+      {
+        "name": "Symbol644"
+      }
+    ]
+  ]
+};

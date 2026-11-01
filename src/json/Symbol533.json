@@ -4,89 +4,56 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol532",
-      "partIdx": "_p6"
+      "name": "Symbol532"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol532",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol532",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol532",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol532",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol532",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol532",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol532",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol532",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ]
   ]

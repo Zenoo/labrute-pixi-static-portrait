@@ -1,24 +1,16 @@
-import { Symbol } from '../common';
-
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
+import { Symbol24 } from './Symbol24';
 
 export const Symbol25: Symbol = {
   "type": "symbol",
   "name": "Symbol25",
   "parts": [
-    {
-      "type": "svg",
-      "name": "Symbol24",
-      "svg": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<svg xmlns:ffdec=\"https://www.free-decompiler.com/flash\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" ffdec:objectType=\"shape\" height=\"24.9px\" width=\"16.5px\" xmlns=\"http://www.w3.org/2000/svg\">\r\n  <g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 8.25, 12.45)\">\r\n    <path d=\"M-0.65 -10.25 L-0.3 -10.15 0.9 -9.5 Q3.9 -7.9 4.8 -6.8 6.75 -4.45 7.15 -3.2 7.45 -2.3 6.95 -0.75 L5.0 5.95 4.05 9.35 Q3.6 10.75 1.8 11.25 L0.45 11.45 -0.35 11.4 Q-1.15 9.15 -0.85 5.75 -0.15 1.5 0.05 -1.35 0.2 -2.9 1.05 -6.3 1.15 -8.4 -0.35 -10.05 L-0.65 -10.25\" fill=\"#938175\" fill-rule=\"evenodd\" stroke=\"none\"/>\r\n    <path d=\"M-0.65 -10.25 L-0.35 -10.05 Q1.15 -8.4 1.05 -6.3 0.2 -2.9 0.05 -1.35 -0.15 1.5 -0.85 5.75 -1.15 9.15 -0.35 11.4 L-2.35 11.0 Q-4.5 10.35 -4.9 9.3 L-5.45 5.3 -6.55 -0.25 -7.0 -4.2 Q-7.4 -7.75 -7.1 -8.65 -6.5 -10.7 -5.35 -11.25 L-3.85 -11.4 -2.8 -11.2 -0.65 -10.25\" fill=\"#64544f\" fill-rule=\"evenodd\" stroke=\"none\"/>\r\n    <path d=\"M-0.35 11.4 L0.45 11.45 1.8 11.25 Q3.6 10.75 4.05 9.35 L5.0 5.95 6.95 -0.75 Q7.45 -2.3 7.15 -3.2 6.75 -4.45 4.8 -6.8 3.9 -7.9 0.9 -9.5 L-0.3 -10.15 -0.65 -10.25 -2.8 -11.2 -3.85 -11.4 -5.35 -11.25 Q-6.5 -10.7 -7.1 -8.65 -7.4 -7.75 -7.0 -4.2 L-6.55 -0.25 -5.45 5.3 -4.9 9.3 Q-4.5 10.35 -2.35 11.0 L-0.35 11.4 Z\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.3019608\" stroke-width=\"1\"/>\r\n  </g>\r\n</svg>\r\n",
-      "offset": {
-        "x": 8.25,
-        "y": 12.45
-      }
-    }
+    Symbol24
   ],
   "frames": [
     [
       {
-        "type": "svg",
         "name": "Symbol24"
       }
     ]

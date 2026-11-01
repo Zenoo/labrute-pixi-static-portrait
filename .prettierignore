@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.baseline/
+.npm-cache/
+.tools/
+.validation/
+.playground/
+flashlib/
+package-lock.json
+src/symbols/
+src/json/
+src/svg/
+src/swf/

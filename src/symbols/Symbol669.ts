@@ -1,24 +1,16 @@
-import { Symbol } from '../common';
-
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
+import { Symbol668 } from './Symbol668';
 
 export const Symbol669: Symbol = {
   "type": "symbol",
   "name": "Symbol669",
   "parts": [
-    {
-      "type": "svg",
-      "name": "Symbol668",
-      "svg": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<svg xmlns:ffdec=\"https://www.free-decompiler.com/flash\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" ffdec:objectType=\"shape\" height=\"21.05px\" width=\"38.75px\" xmlns=\"http://www.w3.org/2000/svg\">\r\n  <g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 19.35, 10.55)\">\r\n    <path d=\"M-5.9 6.4 L-3.45 3.1 -1.35 0.4 Q-1.5 2.05 -3.7 5.6 L-3.9 5.75 -3.9 5.85 -3.7 5.6 -3.2 4.95 4.05 -2.95 6.9 -5.65 3.85 -7.05 Q1.9 -7.8 -0.2 -8.0 0.65 -9.75 0.9 -9.5 L9.25 -8.5 Q12.2 -8.0 14.8 -6.9 16.7 -6.15 18.4 -5.1 14.55 -5.25 7.35 -0.75 2.0 2.55 -6.8 9.5 L-6.7 8.9 -6.3 7.45 -6.0 6.7 -5.9 6.4 M-7.8 -6.05 L-10.2 -3.7 -13.05 -0.35 -15.6 3.55 -16.05 3.8 -17.05 5.25 -17.3 5.25 -15.9 1.55 -13.2 -3.8 -12.15 -5.4 -7.9 -6.2 -7.8 -6.05\" fill=\"#d6baba\" fill-rule=\"evenodd\" stroke=\"none\"/>\r\n    <path d=\"M-0.2 -8.0 Q1.9 -7.8 3.85 -7.05 L6.9 -5.65 4.05 -2.95 -3.2 4.95 -3.7 5.6 -3.9 5.85 -3.9 5.75 -3.7 5.6 Q-1.5 2.05 -1.35 0.4 L-3.45 3.1 -5.9 6.4 -2.7 -2.0 -1.95 -3.9 -0.2 -8.0 M-12.15 -5.4 L-13.2 -3.8 -15.9 1.55 -17.3 5.25 -17.65 5.25 -18.35 -3.35 -15.85 -4.3 -12.15 -5.4\" fill=\"#ffffff\" fill-rule=\"evenodd\" stroke=\"none\"/>\r\n    <path d=\"M-6.0 6.7 L-6.3 7.45 -6.7 8.9 -6.8 9.5 Q2.0 2.55 7.35 -0.75 14.55 -5.25 18.4 -5.1 16.7 -6.15 14.8 -6.9 12.2 -8.0 9.25 -8.5 L0.9 -9.5 Q0.65 -9.75 -0.2 -8.0 L-1.95 -3.9 -2.7 -2.0 -5.9 6.4 M-17.3 5.25 L-17.05 5.25 -16.05 3.8 -15.6 3.55 -13.05 -0.35 -10.2 -3.7 -7.8 -6.05 M-7.9 -6.2 L-12.15 -5.4 -15.85 -4.3 -18.35 -3.35 -17.65 5.25 -17.3 5.25\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.3019608\" stroke-width=\"1\"/>\r\n  </g>\r\n</svg>\r\n",
-      "offset": {
-        "x": 19.35,
-        "y": 10.55
-      }
-    }
+    Symbol668
   ],
   "frames": [
     [
       {
-        "type": "svg",
         "name": "Symbol668"
       }
     ]

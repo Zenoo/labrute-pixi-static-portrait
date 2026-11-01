@@ -4,70 +4,83 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol21",
-      "colorIdx": "_col2"
+      "name": "Symbol21"
     },
     {
       "type": "symbol",
-      "name": "Symbol33",
-      "partIdx": "_p1"
+      "name": "Symbol33"
     },
     {
       "type": "symbol",
-      "name": "Symbol32",
-      "colorIdx": "_col3"
+      "name": "Symbol32"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol33",
+        "partIdx": "_p1",
         "transform": {
           "tx": 0.1,
           "ty": 5
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol21",
+        "colorIdx": "_col2",
         "transform": {
-          "tx": 1.4,
-          "ty": -12.5,
           "a": 1.0095672607421875,
-          "d": 0.9970703125,
           "b": 0.124298095703125,
-          "c": -0.1227569580078125
+          "c": -0.1227569580078125,
+          "d": 0.9970703125,
+          "tx": 1.4,
+          "ty": -12.5
+        },
+        "colorTransform": {
+          "add": [
+            -110,
+            -90,
+            -80,
+            0
+          ]
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol32",
+        "colorIdx": "_col3",
         "transform": {
           "tx": 7.15,
           "ty": -5.6
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol33",
+        "partIdx": "_p1",
         "transform": {
           "tx": 0.1,
           "ty": 5
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol21",
+        "colorIdx": "_col2",
         "transform": {
-          "tx": 1.4,
-          "ty": -12.5,
           "a": 1.0095672607421875,
-          "d": 0.9970703125,
           "b": 0.124298095703125,
-          "c": -0.1227569580078125
+          "c": -0.1227569580078125,
+          "d": 0.9970703125,
+          "tx": 1.4,
+          "ty": -12.5
+        },
+        "colorTransform": {
+          "add": [
+            -110,
+            -90,
+            -80,
+            0
+          ]
         }
       }
     ]

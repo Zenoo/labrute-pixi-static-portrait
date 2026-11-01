@@ -1,0 +1,26 @@
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
+
+
+export const Symbol48: Symbol = {
+  "type": "symbol",
+  "name": "Symbol48",
+  "parts": [
+    {
+      "type": "svg",
+      "name": "Symbol48",
+      "svg": "<svg height=\"61.45px\" width=\"156.85px\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 26.6, 0.8)\"><path d=\"M87.15 42.9 L88.3 40.85 88.5 40.9 98.95 40.6 126.55 57.6 104.7 49.4 87.15 42.9 M-21.65 1.6 L-22.4 3.75 -23.65 3.3 -22.9 1.2 -21.65 1.6\" fill=\"#e0e8eb\" fill-rule=\"evenodd\" stroke=\"none\"/><path d=\"M88.5 40.9 L88.3 40.85 88.35 40.8 88.5 40.9\" fill=\"#725327\" fill-rule=\"evenodd\" stroke=\"none\"/><path d=\"M87.15 42.9 L104.7 49.4 126.55 57.6 128.25 58.65 91.85 52.3 86.45 46.15 85.35 45.8 85.8 45.1 87.15 42.9 M-23.35 6.3 L-24.6 5.9 -23.65 3.3 -22.4 3.75 -23.35 6.3\" fill=\"#b8c9cf\" fill-rule=\"evenodd\" stroke=\"none\"/><path d=\"M88.3 40.85 L87.15 42.9 85.8 42.4 -22.4 3.75 -21.65 1.6 86.35 40.05 88.35 40.8 88.3 40.85\" fill=\"#6b5a50\" fill-rule=\"evenodd\" stroke=\"none\"/><path d=\"M-22.4 3.75 L85.8 42.4 87.15 42.9 85.8 45.1 85.2 44.85 85.2 44.9 -23.35 6.3 -22.4 3.75\" fill=\"#000000\" fill-rule=\"evenodd\" stroke=\"none\"/><path d=\"M88.3 40.85 L87.15 42.9 85.8 45.1 85.35 45.8 86.45 46.15 91.85 52.3 128.25 58.65 126.55 57.6 98.95 40.6 88.5 40.9 88.3 40.85 M88.35 40.8 L86.35 40.05 -21.65 1.6 -22.4 3.75 -23.35 6.3 -24.6 5.9 -23.65 3.3 -22.9 1.2 -21.65 1.6 M88.35 40.8 L88.5 40.9 M85.8 45.1 L85.2 44.85 M85.2 44.9 L-23.35 6.3\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.4\" stroke-width=\"0.05\"/></g></svg>",
+      "offset": {
+        "x": 26.6,
+        "y": 0.8
+      }
+    }
+  ],
+  "frames": [
+    [
+      {
+        "name": "Symbol48"
+      }
+    ]
+  ]
+};

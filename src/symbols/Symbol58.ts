@@ -1,4 +1,5 @@
-import { Symbol } from '../common';
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
 
 
 export const Symbol58: Symbol = {
@@ -8,18 +9,16 @@ export const Symbol58: Symbol = {
     {
       "type": "svg",
       "name": "Symbol58",
-      "svg": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<svg xmlns:ffdec=\"https://www.free-decompiler.com/flash\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" ffdec:objectType=\"shape\" height=\"29.333333333333332px\" width=\"13.733333333333334px\" xmlns=\"http://www.w3.org/2000/svg\">\r\n  <g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 6.866666666666667, 0.36666666666666664)\">\r\n    <path d=\"M3.25 1.5 Q5.3 3.1 6.2 6.75 L5.5 24.35 4.35 26.8 3.15 27.6 Q1.45 28.6 -0.55 28.15 L-0.4 26.55 0.0 22.65 Q0.25 18.35 0.15 13.0 L-0.2 0.3 Q1.7 0.4 3.25 1.5\" fill=\"#d6baba\" fill-rule=\"evenodd\" stroke=\"none\"/>\r\n    <path d=\"M-0.2 0.3 L0.15 13.0 Q0.25 18.35 0.0 22.65 L-0.4 26.55 -0.55 28.15 -2.1 27.65 Q-3.4 27.15 -4.0 26.55 -4.8 25.75 -4.85 24.65 L-6.2 6.95 Q-6.25 4.65 -5.35 3.25 -3.85 0.8 -0.2 0.3\" fill=\"#ffffff\" fill-rule=\"evenodd\" stroke=\"none\"/>\r\n    <path d=\"M4.35 26.8 L5.5 24.35 6.2 6.75 Q5.3 3.1 3.25 1.5 M-4.0 26.55 Q-4.8 25.75 -4.85 24.65 L-6.2 6.95 Q-6.25 4.65 -5.35 3.25\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.3019608\" stroke-width=\"0.6666666666666666\"/>\r\n  </g>\r\n</svg>\r\n",
+      "svg": "<svg height=\"32px\" width=\"16.4px\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 8.2, 1.7)\"><path d=\"M3.25 1.5 Q5.3 3.1 6.2 6.75 L5.5 24.35 4.35 26.8 3.15 27.6 Q1.45 28.6 -0.55 28.15 L-0.4 26.55 0.0 22.65 Q0.25 18.35 0.15 13.0 L-0.2 0.3 Q1.7 0.4 3.25 1.5\" fill=\"#d6baba\" fill-rule=\"evenodd\" stroke=\"none\"/><path d=\"M-0.2 0.3 L0.15 13.0 Q0.25 18.35 0.0 22.65 L-0.4 26.55 -0.55 28.15 -2.1 27.65 Q-3.4 27.15 -4.0 26.55 -4.8 25.75 -4.85 24.65 L-6.2 6.95 Q-6.25 4.65 -5.35 3.25 -3.85 0.8 -0.2 0.3\" fill=\"#ffffff\" fill-rule=\"evenodd\" stroke=\"none\"/><path d=\"M4.35 26.8 L5.5 24.35 6.2 6.75 Q5.3 3.1 3.25 1.5 M-4.0 26.55 Q-4.8 25.75 -4.85 24.65 L-6.2 6.95 Q-6.25 4.65 -5.35 3.25\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.3019608\" stroke-width=\"0.05\"/></g></svg>",
       "offset": {
-        "x": 6.866666666666667,
-        "y": 0.36666666666666664
-      },
-      "scale": 1.5
+        "x": 8.2,
+        "y": 1.7
+      }
     }
   ],
   "frames": [
     [
       {
-        "type": "svg",
         "name": "Symbol58"
       }
     ]

@@ -1,0 +1,22 @@
+{
+  "type": "symbol",
+  "name": "Symbol611",
+  "parts": [
+    {
+      "type": "svg",
+      "name": "Symbol611",
+      "svg": "<svg height=\"7.9px\" width=\"35.1px\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 22.35, 20)\"><path d=\"M10.7 -17.9 L10.75 -17.95 10.7 -18.0 10.7 -17.9 M-20.25 -14.1 L-20.35 -14.1 -20.25 -14.1 Z\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.3019608\" stroke-width=\"0.05\"/></g></svg>",
+      "offset": {
+        "x": 22.35,
+        "y": 20
+      }
+    }
+  ],
+  "frames": [
+    [
+      {
+        "name": "Symbol611"
+      }
+    ]
+  ]
+}

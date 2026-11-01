@@ -10,22 +10,12 @@
   "frames": [
     [
       {
-        "type": "symbol",
-        "name": "Symbol720",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "name": "Symbol720"
       }
     ],
     [
       {
-        "type": "symbol",
-        "name": "Symbol720",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "name": "Symbol720"
       }
     ]
   ]

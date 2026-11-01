@@ -4,20 +4,15 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol717",
-      "colorIdx": "_col2"
+      "name": "Symbol717"
     }
   ],
   "frames": [
     [],
     [
       {
-        "type": "symbol",
         "name": "Symbol717",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "colorIdx": "_col2"
       }
     ]
   ]

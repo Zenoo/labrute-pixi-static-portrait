@@ -4,28 +4,22 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol494",
-      "colorIdx": "_col4"
+      "name": "Symbol494"
     },
     {
       "type": "symbol",
-      "name": "Symbol496",
-      "colorIdx": "_col3"
+      "name": "Symbol496"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol496",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "colorIdx": "_col3"
       },
       {
-        "type": "symbol",
         "name": "Symbol494",
+        "colorIdx": "_col4",
         "transform": {
           "tx": -3.1,
           "ty": 9
@@ -34,16 +28,12 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol496",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "colorIdx": "_col3"
       },
       {
-        "type": "symbol",
         "name": "Symbol494",
+        "colorIdx": "_col4",
         "transform": {
           "tx": -3.1,
           "ty": 9

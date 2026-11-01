@@ -1,76 +1,49 @@
-import { Symbol } from '../common';
-import { Symbol159 } from './Symbol159';
+// Generated from perso.swf by npm run export:swf.
+import type { FramePart, Symbol } from '../common';
 import { Symbol156 } from './Symbol156';
+import { Symbol157 } from './Symbol157';
+import { Symbol159 } from './Symbol159';
+import { Symbol160 } from './Symbol160';
+
+const placement0: FramePart = {
+  "name": "Symbol156",
+  "colorIdx": "_col2b",
+  "transform": {
+    "tx": 7.2,
+    "ty": 32.35
+  }
+};
 
 export const Symbol161: Symbol = {
   "type": "symbol",
   "name": "Symbol161",
   "parts": [
-    {
-      ...Symbol159,
-      "colorIdx": "_col2"
-    },
-    {
-      ...Symbol156,
-      "colorIdx": "_col2b"
-    },
-    {
-      "type": "svg",
-      "name": "Symbol160",
-      "svg": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<svg xmlns:ffdec=\"https://www.free-decompiler.com/flash\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" ffdec:objectType=\"shape\" height=\"16.6px\" width=\"7.4px\" xmlns=\"http://www.w3.org/2000/svg\">\r\n  <g transform=\"matrix(1.0, 0.0, 0.0, 1.0, -1.5, -19.55)\">\r\n    <path d=\"M2.5 20.65 L2.65 20.55 Q3.4 21.3 3.8 21.3 4.1 21.3 4.65 21.9 L5.15 22.55 4.95 22.75 4.6 22.6 4.25 22.4 4.45 22.75 4.15 23.05 3.6 22.55 3.15 22.0 2.5 20.65 M3.55 24.0 L4.5 24.2 6.45 24.95 6.55 25.2 6.5 25.4 7.35 25.95 Q8.15 26.5 7.8 26.5 L7.8 26.6 7.75 26.9 7.1 26.85 4.8 25.7 Q4.35 25.4 3.6 25.2 3.25 25.1 3.25 24.55 3.25 23.95 3.55 24.0 M4.45 28.8 L5.2 29.65 5.45 30.05 5.9 30.1 Q6.9 32.25 6.3 34.5 L5.95 34.75 5.6 35.05 5.45 35.15 4.6 31.8 4.15 31.5 4.15 30.65 4.45 28.8\" fill=\"#ffffff\" fill-opacity=\"0.7019608\" fill-rule=\"evenodd\" stroke=\"none\"/>\r\n  </g>\r\n</svg>\r\n",
-      "offset": {
-        "x": -1.5,
-        "y": -19.55
-      }
-    },
-    {
-      "type": "svg",
-      "name": "Symbol157",
-      "svg": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<svg xmlns:ffdec=\"https://www.free-decompiler.com/flash\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" ffdec:objectType=\"shape\" height=\"13.15px\" width=\"6.65px\" xmlns=\"http://www.w3.org/2000/svg\">\r\n  <g transform=\"matrix(1.0, 0.0, 0.0, 1.0, -2.25, -23)\">\r\n    <path d=\"M3.55 24.0 L4.5 24.2 6.45 24.95 6.55 25.2 6.5 25.4 7.35 25.95 Q8.15 26.5 7.8 26.5 L7.8 26.6 7.75 26.9 7.1 26.85 4.8 25.7 Q4.35 25.4 3.6 25.2 3.25 25.1 3.25 24.55 3.25 23.95 3.55 24.0 M5.2 29.65 L5.45 30.05 5.9 30.1 Q6.9 32.25 6.3 34.5 L5.95 34.75 5.6 35.05 5.45 35.15 4.6 31.8 4.15 31.5 4.15 30.65 4.45 28.8 5.2 29.65\" fill=\"#ffffff\" fill-opacity=\"0.7019608\" fill-rule=\"evenodd\" stroke=\"none\"/>\r\n  </g>\r\n</svg>\r\n",
-      "offset": {
-        "x": -2.25,
-        "y": -23
-      }
-    }
+    Symbol156,
+    Symbol157,
+    Symbol159,
+    Symbol160
   ],
   "frames": [
     [
       {
-        "type": "svg",
         "name": "Symbol157"
       },
-      {
-        "type": "symbol",
-        "name": "Symbol156",
-        "transform": {
-          "tx": 7.2,
-          "ty": 32.35
-        }
-      }
+      placement0
     ],
     [
       {
-        "type": "svg",
         "name": "Symbol160"
       },
+      placement0,
       {
-        "type": "symbol",
-        "name": "Symbol156",
-        "transform": {
-          "tx": 7.2,
-          "ty": 32.35
-        }
-      },
-      {
-        "type": "symbol",
         "name": "Symbol159",
+        "colorIdx": "_col2",
         "transform": {
-          "tx": 7.25,
-          "ty": 24.05,
           "a": -0.605316162109375,
-          "d": 0.9159393310546875,
           "b": -0.4839019775390625,
-          "c": 0
+          "d": 0.9159393310546875,
+          "tx": 7.25,
+          "ty": 24.05
         }
       }
     ]

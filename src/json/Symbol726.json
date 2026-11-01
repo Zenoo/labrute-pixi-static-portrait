@@ -10,12 +10,8 @@
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol725",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p5"
       }
     ]
   ]

@@ -12,13 +12,12 @@
     [],
     [
       {
-        "type": "symbol",
-        "name": "Symbol555",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "name": "Symbol555"
       }
-    ]
+    ],
+    [],
+    [],
+    [],
+    []
   ]
 }

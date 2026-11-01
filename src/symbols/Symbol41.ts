@@ -1,29 +1,30 @@
-import { Symbol } from '../common';
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
 import { Symbol40 } from './Symbol40';
 
 export const Symbol41: Symbol = {
   "type": "symbol",
   "name": "Symbol41",
   "parts": [
-    {
-      ...Symbol40,
-      "colorIdx": "_col2"
-    }
+    Symbol40
   ],
   "frames": [
     [],
     [
       {
-        "type": "symbol",
         "name": "Symbol40",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
+        "colorIdx": "_col2",
         "transform": {
           "tx": -0.15,
           "ty": -0.2
+        },
+        "colorTransform": {
+          "add": [
+            -16,
+            -50,
+            -80,
+            0
+          ]
         }
       }
     ]

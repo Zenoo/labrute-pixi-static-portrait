@@ -4,29 +4,26 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol82",
-      "colorIdx": "_col3"
+      "name": "Symbol82"
     },
     {
       "type": "symbol",
-      "name": "Symbol84",
-      "colorIdx": "_col2"
+      "name": "Symbol84"
     }
   ],
   "frames": [
     [],
     [
       {
-        "type": "symbol",
         "name": "Symbol84",
+        "colorIdx": "_col2",
         "transform": {
-          "tx": 1.6,
-          "ty": 0
+          "tx": 1.6
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol82",
+        "colorIdx": "_col3",
         "transform": {
           "tx": -2,
           "ty": -6.85

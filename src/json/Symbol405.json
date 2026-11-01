@@ -4,24 +4,26 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol404",
-      "colorIdx": "_col2"
+      "name": "Symbol404"
     }
   ],
   "frames": [
     [],
     [
       {
-        "type": "symbol",
         "name": "Symbol404",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
+        "colorIdx": "_col2",
         "transform": {
           "tx": 2.55,
           "ty": -5.75
+        },
+        "colorTransform": {
+          "add": [
+            -16,
+            -50,
+            -80,
+            0
+          ]
         }
       }
     ]

@@ -1,24 +1,16 @@
-import { Symbol } from '../common';
-
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
+import { Symbol528 } from './Symbol528';
 
 export const Symbol529: Symbol = {
   "type": "symbol",
   "name": "Symbol529",
   "parts": [
-    {
-      "type": "svg",
-      "name": "Symbol528",
-      "svg": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<svg xmlns:ffdec=\"https://www.free-decompiler.com/flash\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" ffdec:objectType=\"shape\" height=\"21.95px\" width=\"18.6px\" xmlns=\"http://www.w3.org/2000/svg\">\r\n  <g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 9.35, 10.95)\">\r\n    <path d=\"M-6.4 6.2 L-7.05 3.3 Q-8.8 -3.55 -8.05 -9.95 L-7.7 -8.05 Q-7.55 -6.65 -5.3 -4.65 L-0.9 -0.25 3.3 3.8 3.45 3.85 3.1 3.9 Q-1.8 1.4 -1.8 0.95 L-3.0 0.0 -4.8 -1.15 -4.65 -0.85 -4.0 0.7 -5.55 3.7 -6.4 6.2\" fill=\"#ffffff\" fill-rule=\"evenodd\" stroke=\"none\"/>\r\n    <path d=\"M-6.4 6.2 L-5.55 3.7 -4.0 0.7 -4.65 -0.85 -4.8 -1.15 -3.0 0.0 -1.8 0.95 Q-1.8 1.4 3.1 3.9 L3.45 3.85 Q5.35 5.4 8.25 7.1 L8.05 7.9 4.6 7.6 0.85 6.85 Q-3.5 6.55 -5.6 10.0 L-5.85 9.55 Q-6.05 7.9 -6.4 6.2\" fill=\"#d6baba\" fill-rule=\"evenodd\" stroke=\"none\"/>\r\n    <path d=\"M3.45 3.85 L3.3 3.8 -0.9 -0.25 -5.3 -4.65 Q-7.55 -6.65 -7.7 -8.05 L-8.05 -9.95 Q-8.8 -3.55 -7.05 3.3 L-6.4 6.2 Q-6.05 7.9 -5.85 9.55 L-5.6 10.0 Q-3.5 6.55 0.85 6.85 L4.6 7.6 8.05 7.9 8.25 7.1 Q5.35 5.4 3.45 3.85 Z\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.3019608\" stroke-width=\"1\"/>\r\n  </g>\r\n</svg>\r\n",
-      "offset": {
-        "x": 9.35,
-        "y": 10.95
-      }
-    }
+    Symbol528
   ],
   "frames": [
     [
       {
-        "type": "svg",
         "name": "Symbol528"
       }
     ]

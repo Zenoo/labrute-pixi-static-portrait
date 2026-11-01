@@ -4,21 +4,19 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol268",
-      "colorIdx": "_col3"
+      "name": "Symbol268"
     }
   ],
   "frames": [
     [],
     [
       {
-        "type": "symbol",
         "name": "Symbol268",
+        "colorIdx": "_col3",
         "transform": {
-          "tx": 1.55,
-          "ty": 0,
           "a": 3.2306976318359375,
-          "d": 3.2306976318359375
+          "d": 3.2306976318359375,
+          "tx": 1.55
         }
       }
     ]

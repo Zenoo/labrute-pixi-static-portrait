@@ -1,0 +1,22 @@
+{
+  "type": "symbol",
+  "name": "Symbol148",
+  "parts": [
+    {
+      "type": "svg",
+      "name": "Symbol148",
+      "svg": "<svg height=\"9.65px\" width=\"7.4px\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 7.4, 7.6)\"><path d=\"M-3.95 -0.35 Q-4.85 -1.15 -5.4 -2.4 L-5.25 -2.75 Q-4.1 -4.45 -2.65 -5.45 L-2.0 -5.35 -2.0 -5.15 -2.15 -4.1 -2.45 -2.6 Q-2.6 -1.35 -3.1 0.05 -3.5 0.05 -3.95 -0.35\" fill=\"#ffffff\" fill-rule=\"evenodd\" stroke=\"none\"/></g></svg>",
+      "offset": {
+        "x": 7.4,
+        "y": 7.6
+      }
+    }
+  ],
+  "frames": [
+    [
+      {
+        "name": "Symbol148"
+      }
+    ]
+  ]
+}

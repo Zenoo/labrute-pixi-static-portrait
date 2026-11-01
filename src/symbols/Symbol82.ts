@@ -1,24 +1,16 @@
-import { Symbol } from '../common';
-
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
+import { Symbol81 } from './Symbol81';
 
 export const Symbol82: Symbol = {
   "type": "symbol",
   "name": "Symbol82",
   "parts": [
-    {
-      "type": "svg",
-      "name": "Symbol81",
-      "svg": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<svg xmlns:ffdec=\"https://www.free-decompiler.com/flash\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" ffdec:objectType=\"shape\" height=\"9.85px\" width=\"14.45px\" xmlns=\"http://www.w3.org/2000/svg\">\r\n  <g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 7.25, 4.95)\">\r\n    <path d=\"M5.75 3.9 L1.25 3.9 -2.7 2.65 Q-4.5 1.7 -5.7 0.2 -6.4 -0.55 -6.2 -1.45 -5.6 -3.9 -2.55 -3.95 -0.1 -0.2 4.05 1.4 L6.2 2.0 Q5.85 2.9 5.75 3.9\" fill=\"#d6baba\" fill-rule=\"evenodd\" stroke=\"none\"/>\r\n    <path d=\"M5.75 3.9 L1.25 3.9 -2.7 2.65 Q-4.5 1.7 -5.7 0.2 -6.4 -0.55 -6.2 -1.45 -5.6 -3.9 -2.55 -3.95 -0.1 -0.2 4.05 1.4 L6.2 2.0\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.3019608\" stroke-width=\"1\"/>\r\n  </g>\r\n</svg>\r\n",
-      "offset": {
-        "x": 7.25,
-        "y": 4.95
-      }
-    }
+    Symbol81
   ],
   "frames": [
     [
       {
-        "type": "svg",
         "name": "Symbol81"
       }
     ]

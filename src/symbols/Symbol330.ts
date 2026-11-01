@@ -1,149 +1,108 @@
-import { Symbol } from '../common';
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
 import { Symbol329 } from './Symbol329';
 
 export const Symbol330: Symbol = {
   "type": "symbol",
   "name": "Symbol330",
   "parts": [
-    {
-      ...Symbol329,
-      "partIdx": "_p5"
-    },
-    {
-      ...Symbol329,
-      "partIdx": "_p5"
-    },
-    {
-      ...Symbol329,
-      "partIdx": "_p5"
-    },
-    {
-      ...Symbol329,
-      "partIdx": "_p5"
-    },
-    {
-      ...Symbol329,
-      "partIdx": "_p5"
-    },
-    {
-      ...Symbol329,
-      "partIdx": "_p5"
-    },
-    {
-      ...Symbol329,
-      "partIdx": "_p5"
-    },
-    {
-      ...Symbol329,
-      "partIdx": "_p5"
-    }
+    Symbol329
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol329",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p5"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol329",
+        "partIdx": "_p5",
         "transform": {
-          "tx": -1.7,
-          "ty": -0.2,
           "a": 1.0449676513671875,
+          "c": 0.0403594970703125,
           "d": 1.0186004638671875,
-          "b": 0,
-          "c": 0.0403594970703125
+          "tx": -1.7,
+          "ty": -0.2
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol329",
+        "partIdx": "_p5",
         "transform": {
-          "tx": -3.35,
-          "ty": -0.35,
           "a": 1.089935302734375,
+          "c": 0.082183837890625,
           "d": 1.0355072021484375,
-          "b": 0,
-          "c": 0.082183837890625
+          "tx": -3.35,
+          "ty": -0.35
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol329",
+        "partIdx": "_p5",
         "transform": {
-          "tx": -5.15,
-          "ty": -0.5,
           "a": 1.1349029541015625,
+          "c": 0.1254425048828125,
           "d": 1.050689697265625,
-          "b": 0,
-          "c": 0.1254425048828125
+          "tx": -5.15,
+          "ty": -0.5
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol329",
+        "partIdx": "_p5",
         "transform": {
-          "tx": -6.9,
-          "ty": -0.6,
           "a": 1.17987060546875,
+          "c": 0.1741943359375,
           "d": 1.06390380859375,
-          "b": 0,
-          "c": 0.1741943359375
+          "tx": -6.9,
+          "ty": -0.6
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol329",
+        "partIdx": "_p5",
         "transform": {
-          "tx": -7.45,
-          "ty": -0.8,
           "a": 1.2433929443359375,
+          "c": 0.150726318359375,
           "d": 1.0642547607421875,
-          "b": 0,
-          "c": 0.150726318359375
+          "tx": -7.45,
+          "ty": -0.8
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol329",
+        "partIdx": "_p5",
         "transform": {
-          "tx": -8.1,
-          "ty": -0.9,
           "a": 1.306915283203125,
+          "c": 0.131439208984375,
           "d": 1.0641326904296875,
-          "b": 0,
-          "c": 0.131439208984375
+          "tx": -8.1,
+          "ty": -0.9
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol329",
+        "partIdx": "_p5",
         "transform": {
-          "tx": -8.75,
-          "ty": -1.05,
           "a": 1.370452880859375,
+          "c": 0.11328125,
           "d": 1.06390380859375,
-          "b": 0,
-          "c": 0.11328125
+          "tx": -8.75,
+          "ty": -1.05
         }
       }
     ]

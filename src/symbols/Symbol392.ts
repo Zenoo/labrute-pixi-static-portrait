@@ -1,24 +1,16 @@
-import { Symbol } from '../common';
-
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
+import { Symbol391 } from './Symbol391';
 
 export const Symbol392: Symbol = {
   "type": "symbol",
   "name": "Symbol392",
   "parts": [
-    {
-      "type": "svg",
-      "name": "Symbol391",
-      "svg": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<svg xmlns:ffdec=\"https://www.free-decompiler.com/flash\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" ffdec:objectType=\"shape\" height=\"39.6px\" width=\"68.7px\" xmlns=\"http://www.w3.org/2000/svg\">\r\n  <g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 34.35, 19.8)\">\r\n    <path d=\"M32.75 -10.4 L32.7 -9.1 Q32.7 -6.6 33.1 -3.7 L32.55 -1.7 33.35 2.4 Q31.5 7.05 27.35 11.8 L20.9 18.8 16.75 17.05 Q15.5 16.5 14.1 16.45 L12.7 16.25 12.8 15.6 Q11.6 15.2 5.4 1.45 3.5 -2.85 2.25 -7.35 1.0 -11.75 1.0 -14.1 1.0 -16.15 2.65 -17.4 4.5 -18.8 7.95 -18.8 11.25 -18.8 17.35 -16.75 L27.65 -13.75 Q29.15 -13.75 32.75 -10.4 M-33.05 1.95 L-33.1 1.8 -33.35 0.35 Q-33.35 -3.15 -30.85 -4.6 -28.7 -5.85 -25.4 -5.2 -22.25 -4.5 -20.0 -2.45 -17.5 -0.25 -17.5 2.45 -17.5 4.15 -18.25 7.25 L-19.0 9.65 -20.5 8.5 Q-22.65 3.6 -23.25 5.3 -24.0 6.85 -24.9 6.85 -25.55 6.85 -28.6 5.05 L-32.0 2.75 -33.05 1.95\" fill=\"#d6baba\" fill-rule=\"evenodd\" stroke=\"none\"/>\r\n    <path d=\"M32.75 -10.4 L32.7 -9.1 Q32.7 -6.6 33.1 -3.7 L32.55 -1.7 33.35 2.4 Q31.5 7.05 27.35 11.8 L20.9 18.8 16.75 17.05 Q15.5 16.5 14.1 16.45 L12.7 16.25 12.8 15.6 Q11.6 15.2 5.4 1.45 3.5 -2.85 2.25 -7.35 1.0 -11.75 1.0 -14.1 1.0 -16.15 2.65 -17.4 4.5 -18.8 7.95 -18.8 11.25 -18.8 17.35 -16.75 L27.65 -13.75 M-33.05 1.95 L-32.0 2.75 -28.6 5.05 Q-25.55 6.85 -24.9 6.85 -24.0 6.85 -23.25 5.3 -22.65 3.6 -20.5 8.5\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.3019608\" stroke-width=\"1\"/>\r\n  </g>\r\n</svg>\r\n",
-      "offset": {
-        "x": 34.35,
-        "y": 19.8
-      }
-    }
+    Symbol391
   ],
   "frames": [
     [
       {
-        "type": "svg",
         "name": "Symbol391"
       }
     ]

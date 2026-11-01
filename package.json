@@ -1,15 +1,27 @@
 {
-  "name": "labrute-static-fla-parser",
+  "name": "labrute-pixi-static-portrait",
   "version": "1.0.6",
-  "description": "",
+  "description": "Static LaBrute character portraits for caller-owned PixiJS 8 renderers.",
   "main": "dist/Symbols.js",
-  "module": "dist/Symbols.js",
+  "module": "dist/Symbols.mjs",
   "types": "dist/Symbols.d.ts",
   "scripts": {
-    "build": "rollup --config && rollup --config rollup-declarations.config.mjs && rm -r dist/src",
-    "test": "webpack-dev-server --mode development",
-    "deploy": "bash ./release-dist.bash",
-    "export-xml": "ts-node ./src/exportXmlAsJson.ts"
+    "build": "node scripts/build.cjs",
+    "test": "npm run test:unit",
+    "playground": "webpack serve --mode development",
+    "setup:swf": "node scripts/setup-swf.cjs",
+    "export:swf": "node scripts/export-swf.cjs",
+    "test:unit": "node --test test/*.test.cjs test/*.test.mjs",
+    "test:browser": "node test/browser.cjs",
+    "test:comparison": "node test/browser.cjs comparison",
+    "benchmark": "node test/browser.cjs benchmark",
+    "test:generation": "node scripts/check-generation.cjs",
+    "prepublishOnly": "npm run build && npm run test:unit",
+    "deploy": "npm publish --provenance",
+    "test:playground": "node test/browser.cjs playground",
+    "test:packaging": "node --test test/packaging.test.cjs",
+    "format": "prettier --write \"src/*.ts\" \"scripts/**/*.cjs\" \"test/**/*.{cjs,mjs,html}\" \"*.mjs\" \"webpack.config.js\" \"package.json\" \".prettierrc.json\" \".github/workflows/*.yml\"",
+    "format:check": "prettier --check \"src/*.ts\" \"scripts/**/*.cjs\" \"test/**/*.{cjs,mjs,html}\" \"*.mjs\" \"webpack.config.js\" \"package.json\" \".prettierrc.json\" \".github/workflows/*.yml\""
   },
   "repository": {
     "type": "git",
@@ -20,43 +32,28 @@
   },
   "homepage": "https://github.com/Zenoo/labrute-static-fla-parser#readme",
   "keywords": [
-    "twinoid",
-    "muxxu",
-    "motion-twin",
-    "mybrute",
     "labrute",
-    "parser",
-    "fla",
-    "xml"
+    "mybrute",
+    "pixi",
+    "portrait",
+    "static",
+    "swf"
   ],
   "author": "Zenoo",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.17.8",
-    "@babel/preset-env": "^7.16.4",
-    "@babel/preset-typescript": "^7.16.7",
-    "@pixi/filter-glow": "^5.2.1",
-    "@pixi/ticker": "^7.3.2",
-    "@rollup/plugin-json": "^6.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.18.0",
-    "@typescript-eslint/parser": "^5.18.0",
-    "babel-loader": "^8.2.3",
-    "dotenv": "^10.0.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-prettier": "^3.1.4",
+    "@ruffle-rs/ruffle": "0.7.1",
     "html-webpack-plugin": "^5.5.0",
-    "pixi.js": "^7.3.2",
+    "pixi.js": "^8.19.0",
+    "prettier": "3.1.0",
     "rollup": "^4.2.0",
     "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-typescript2": "^0.36.0",
-    "ts-node": "^10.9.1",
+    "terser": "5.31.6",
     "typescript": "^4.6.3",
     "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^5.2.1",
-    "xml-js": "^1.6.11"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.1"
   },
   "browserslist": {
     "production": [
@@ -69,5 +66,44 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/Symbols.d.mts",
+        "default": "./dist/Symbols.mjs"
+      },
+      "require": {
+        "types": "./dist/Symbols.d.cts",
+        "default": "./dist/Symbols.js"
+      }
+    },
+    "./dist/Symbols.js": {
+      "types": "./dist/Symbols.d.cts",
+      "default": "./dist/Symbols.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/Symbols.js",
+    "dist/Symbols.mjs",
+    "dist/symbol-data.cjs",
+    "dist/Symbols.d.ts",
+    "dist/Symbols.d.cts",
+    "dist/Symbols.d.mts",
+    "CHANGELOG.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "pixi.js": "^8.19.0"
+  },
+  "dependencies": {
+    "pixi-filters": "^6.1.5"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

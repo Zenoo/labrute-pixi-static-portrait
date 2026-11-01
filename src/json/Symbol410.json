@@ -10,8 +10,8 @@
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol409",
+        "partIdx": "_p5",
         "transform": {
           "tx": -0.75,
           "ty": 3.15

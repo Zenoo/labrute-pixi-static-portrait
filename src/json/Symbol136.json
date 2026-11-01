@@ -4,109 +4,64 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol135",
-      "partIdx": "_p6"
-    },
-    {
-      "type": "symbol",
-      "name": "Symbol135",
-      "partIdx": "_p6"
-    },
-    {
-      "type": "symbol",
-      "name": "Symbol135",
-      "partIdx": "_p6"
-    },
-    {
-      "type": "symbol",
-      "name": "Symbol135",
-      "partIdx": "_p6"
+      "name": "Symbol135"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol135",
+        "partIdx": "_p6"
+      }
+    ],
+    [
+      {
+        "name": "Symbol135",
+        "partIdx": "_p6"
+      }
+    ],
+    [
+      {
+        "name": "Symbol135",
+        "partIdx": "_p6"
+      }
+    ],
+    [
+      {
+        "name": "Symbol135",
+        "partIdx": "_p6"
+      }
+    ],
+    [
+      {
+        "name": "Symbol135",
+        "partIdx": "_p6"
+      }
+    ],
+    [
+      {
+        "name": "Symbol135",
+        "partIdx": "_p6",
         "transform": {
-          "tx": 0,
-          "ty": 0
+          "a": 1.075408935546875
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol135",
+        "partIdx": "_p6",
         "transform": {
-          "tx": 0,
-          "ty": 0
+          "a": 1.15081787109375
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol135",
+        "partIdx": "_p6",
         "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol135",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol135",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol135",
-        "transform": {
-          "tx": 0,
-          "ty": 0,
-          "a": 1.075408935546875,
-          "d": 1
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol135",
-        "transform": {
-          "tx": 0,
-          "ty": 0,
-          "a": 1.15081787109375,
-          "d": 1
-        }
-      }
-    ],
-    [
-      {
-        "type": "symbol",
-        "name": "Symbol135",
-        "transform": {
-          "tx": 0,
-          "ty": 0,
-          "a": 1.226226806640625,
-          "d": 1
+          "a": 1.226226806640625
         }
       }
     ]

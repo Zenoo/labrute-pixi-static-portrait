@@ -1,0 +1,26 @@
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
+
+
+export const Symbol334: Symbol = {
+  "type": "symbol",
+  "name": "Symbol334",
+  "parts": [
+    {
+      "type": "svg",
+      "name": "Symbol334",
+      "svg": "<svg height=\"6.9px\" width=\"9.55px\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"matrix(1.0, 0.0, 0.0, 1.0, 5.4, 3.55)\"><path d=\"M1.2 -1.45 Q2.05 -0.75 1.7 0.0 L1.3 0.75 0.55 1.05 0.65 0.7 0.65 0.05 0.5 -0.55 -0.15 -1.55 1.2 -1.45 M-1.65 -0.95 L-1.8 -0.1 -1.75 0.45 -1.65 0.75 -1.5 1.0 -1.15 1.3 -1.0 1.35 -2.4 1.3 -2.5 1.1 -2.55 0.35 -1.65 -0.95\" fill=\"#fbfbfb\" fill-rule=\"evenodd\" stroke=\"none\"/><path d=\"M2.15 -1.35 L1.2 -1.45 Q2.05 -0.75 1.7 0.0 L1.3 0.75 M-0.15 -1.55 L-1.65 -0.95 -2.55 0.35 -2.95 0.5 -3.4 0.55 M-0.15 -1.55 L1.2 -1.45\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.2509804\" stroke-width=\"0.05\"/><path d=\"M0.55 1.05 L0.65 0.7 0.65 0.05 0.5 -0.55 -0.15 -1.55 M-1.65 -0.95 L-1.8 -0.1 -1.75 0.45 -1.65 0.75 -1.5 1.0 -1.15 1.3 -1.0 1.35\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.4\" stroke-width=\"0.05\"/></g></svg>",
+      "offset": {
+        "x": 5.4,
+        "y": 3.55
+      }
+    }
+  ],
+  "frames": [
+    [
+      {
+        "name": "Symbol334"
+      }
+    ]
+  ]
+};

@@ -4,89 +4,56 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol596",
-      "partIdx": "_p6"
+      "name": "Symbol596"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol596",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "partIdx": "_p6"
       }
     ]
   ]

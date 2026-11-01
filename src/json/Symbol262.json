@@ -4,8 +4,7 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol258",
-      "colorIdx": "_col4"
+      "name": "Symbol258"
     },
     {
       "type": "symbol",
@@ -13,45 +12,31 @@
     },
     {
       "type": "symbol",
-      "name": "Symbol261",
-      "colorIdx": "_col3b"
+      "name": "Symbol261"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol258",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "colorIdx": "_col4"
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol261",
+        "colorIdx": "_col3b",
         "transform": {
           "tx": -4.65,
           "ty": 15.3
         }
       },
       {
-        "type": "symbol",
-        "name": "Symbol259",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "name": "Symbol259"
       },
       {
-        "type": "symbol",
         "name": "Symbol258",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "colorIdx": "_col4"
       }
     ]
   ]

@@ -4,64 +4,57 @@
   "parts": [
     {
       "type": "symbol",
-      "name": "Symbol584",
-      "partIdx": "_p1"
+      "name": "Symbol473"
     },
     {
       "type": "symbol",
-      "name": "Symbol578",
-      "partIdx": "_p1"
+      "name": "Symbol570"
     },
     {
       "type": "symbol",
-      "name": "Symbol576",
-      "partIdx": "_p1"
+      "name": "Symbol571"
     },
     {
       "type": "symbol",
-      "name": "Symbol571",
-      "partIdx": "_p1"
+      "name": "Symbol576"
     },
     {
       "type": "symbol",
-      "name": "Symbol570",
-      "colorIdx": "_col3"
+      "name": "Symbol578"
     },
     {
       "type": "symbol",
-      "name": "Symbol473",
-      "colorIdx": "_col2"
+      "name": "Symbol584"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol473",
+        "colorIdx": "_col2",
         "transform": {
-          "tx": -11.2,
-          "ty": 2.55,
           "a": 1.020965576171875,
-          "d": 0.6470947265625,
           "b": 0.0492095947265625,
-          "c": 0.035797119140625
+          "c": 0.035797119140625,
+          "d": 0.6470947265625,
+          "tx": -11.2,
+          "ty": 2.55
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol570",
+        "colorIdx": "_col3",
         "transform": {
-          "tx": -2,
-          "ty": 0
+          "tx": -2
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol571",
+        "partIdx": "_p1",
         "transform": {
           "tx": -16,
           "ty": -1.55
@@ -70,8 +63,8 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol576",
+        "partIdx": "_p1",
         "transform": {
           "tx": -8.45,
           "ty": -8.5
@@ -80,8 +73,8 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol578",
+        "partIdx": "_p1",
         "transform": {
           "tx": -0.55,
           "ty": -1.55
@@ -90,13 +83,14 @@
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol584",
+        "partIdx": "_p1",
         "transform": {
           "tx": 3.25,
           "ty": -6
         }
       }
-    ]
+    ],
+    []
   ]
 }

@@ -1,7 +1,12 @@
-import { dts } from "rollup-plugin-dts";
+import { dts } from 'rollup-plugin-dts';
 
+// NodeNext consumers need declarations matching each runtime module format.
 export default {
-  input: 'dist/src/Symbols.d.ts',
-  output: [{ file: 'dist/Symbols.d.ts', format: 'es' }],
-  plugins: [dts()]
+  input: 'src/Symbols.ts',
+  output: ['dist/Symbols.d.ts', 'dist/Symbols.d.cts', 'dist/Symbols.d.mts'].map((file) => ({
+    file,
+    format: 'es',
+  })),
+  external: ['pixi.js'],
+  plugins: [dts({ compilerOptions: { skipLibCheck: true, moduleResolution: 2 } })],
 };

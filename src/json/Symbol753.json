@@ -8,17 +8,16 @@
     },
     {
       "type": "symbol",
-      "name": "Symbol752"
+      "name": "Symbol460"
     },
     {
       "type": "symbol",
-      "name": "Symbol460"
+      "name": "Symbol752"
     }
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol460",
         "transform": {
           "tx": 27.1,
@@ -26,25 +25,25 @@
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol11",
-        "colorOffset": {
-          "r": 0,
-          "g": 0,
-          "b": 0
-        },
-        "alpha": 0.05078125,
         "transform": {
-          "tx": 61.35,
-          "ty": 217.55,
           "a": 1.2542877197265625,
-          "d": 0.5937347412109375
+          "d": 0.5937347412109375,
+          "tx": 61.35,
+          "ty": 217.55
+        },
+        "colorTransform": {
+          "multiply": [
+            1,
+            1,
+            1,
+            0.05078125
+          ]
         }
       }
     ],
     [
       {
-        "type": "symbol",
         "name": "Symbol752",
         "transform": {
           "tx": 28.9,
@@ -52,21 +51,23 @@
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol11",
-        "colorOffset": {
-          "r": 0,
-          "g": 0,
-          "b": 0
-        },
-        "alpha": 0.05078125,
         "transform": {
-          "tx": 61.35,
-          "ty": 217.55,
           "a": 1.2542877197265625,
-          "d": 0.5937347412109375
+          "d": 0.5937347412109375,
+          "tx": 61.35,
+          "ty": 217.55
+        },
+        "colorTransform": {
+          "multiply": [
+            1,
+            1,
+            1,
+            0.05078125
+          ]
         }
       }
-    ]
+    ],
+    []
   ]
 }

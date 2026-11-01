@@ -1,23 +1,17 @@
-import { Symbol } from '../common';
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
 import { Symbol308 } from './Symbol308';
 
 export const Symbol309: Symbol = {
   "type": "symbol",
   "name": "Symbol309",
   "parts": [
-    {
-      ...Symbol308
-    }
+    Symbol308
   ],
   "frames": [
     [
       {
-        "type": "symbol",
-        "name": "Symbol308",
-        "transform": {
-          "tx": 0,
-          "ty": 0
-        }
+        "name": "Symbol308"
       }
     ]
   ]

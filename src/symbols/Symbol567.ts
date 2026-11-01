@@ -1,4 +1,5 @@
-import { Symbol } from '../common';
+// Generated from perso.swf by npm run export:swf.
+import type { Symbol } from '../common';
 import { Symbol556 } from './Symbol556';
 import { Symbol558 } from './Symbol558';
 import { Symbol566 } from './Symbol566';
@@ -7,45 +8,39 @@ export const Symbol567: Symbol = {
   "type": "symbol",
   "name": "Symbol567",
   "parts": [
-    {
-      ...Symbol556,
-      "partIdx": "_p7b"
-    },
-    {
-      ...Symbol558,
-      "colorIdx": "_col0"
-    },
-    {
-      ...Symbol566,
-      "partIdx": "_p7"
-    }
+    Symbol556,
+    Symbol558,
+    Symbol566
   ],
   "frames": [
     [
       {
-        "type": "symbol",
         "name": "Symbol566",
+        "partIdx": "_p7",
         "transform": {
           "tx": -2.95,
           "ty": -1.5
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol558",
-        "colorOffset": {
-          "r": -16,
-          "g": -50,
-          "b": -80
-        },
+        "colorIdx": "_col0",
         "transform": {
           "tx": -3.4,
           "ty": -3.3
+        },
+        "colorTransform": {
+          "add": [
+            -16,
+            -50,
+            -80,
+            0
+          ]
         }
       },
       {
-        "type": "symbol",
         "name": "Symbol556",
+        "partIdx": "_p7b",
         "transform": {
           "tx": -5.35,
           "ty": 21.3
