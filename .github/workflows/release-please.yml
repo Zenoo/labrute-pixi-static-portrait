@@ -31,5 +31,6 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - run: npm ci
         if: ${{ steps.release.outputs.release_created }}
-      - run: npm run deploy
+      # Local publishing does not have a CI identity; request provenance only here.
+      - run: npm run deploy -- --provenance
         if: ${{ steps.release.outputs.release_created }}

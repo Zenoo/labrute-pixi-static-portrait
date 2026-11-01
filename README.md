@@ -121,3 +121,14 @@ Generated symbol/JSON/SVG sources retain the generator's readable formatting. Co
 Native ESM and CJS renderer entries import their matching consumer Pixi runtime. Conditional exports select `.d.mts` or `.d.cts` declarations. One minified, Pixi-free `symbol-data.cjs` is shared by both entries. Maintained/generated sources remain readable. All 481 previous named symbol exports are retained; the regenerated source additionally exports shape wrappers and other source definitions.
 
 The data types changed: definitions are read-only, SVGs use `offset` with no correction `scale`, placements carry `partIdx` / `colorIdx`, sparse `colorTransform`, masks and effects. The obsolete symbol-level selector fields, placement `type`, `colorOffset`, and truthiness-based alpha handling are removed. Applications should migrate to the decoded portrait API rather than keep an old renderer.
+
+For a local publication, including creating the renamed npm package, run:
+
+```sh
+npm run deploy
+```
+
+This uses your npm login and runs the build and tests through `prepublishOnly`.
+The GitHub release workflow adds `--provenance` when publishing from its hosted runner.
+Do not pass that flag locally: automatic provenance generation requires a supported CI identity.
+See [npm's provenance requirements](https://docs.npmjs.com/generating-provenance-statements/).

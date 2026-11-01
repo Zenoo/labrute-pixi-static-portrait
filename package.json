@@ -17,7 +17,7 @@
     "benchmark": "node test/browser.cjs benchmark",
     "test:generation": "node scripts/check-generation.cjs",
     "prepublishOnly": "npm run build && npm run test:unit",
-    "deploy": "npm publish --provenance",
+    "deploy": "npm publish",
     "test:playground": "node test/browser.cjs playground",
     "test:packaging": "node --test test/packaging.test.cjs",
     "format": "prettier --write \"src/*.ts\" \"scripts/**/*.cjs\" \"test/**/*.{cjs,mjs,html}\" \"*.mjs\" \"webpack.config.js\" \"package.json\" \".prettierrc.json\" \".github/workflows/*.yml\"",

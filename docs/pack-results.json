@@ -1,15 +1,15 @@
 {
-  "size": 247964,
-  "unpackedSize": 1338113,
+  "size": 247044,
+  "unpackedSize": 1335601,
   "files": [
     {
       "path": "CHANGELOG.md",
-      "size": 2741,
+      "size": 2123,
       "mode": 420
     },
     {
       "path": "README.md",
-      "size": 11436,
+      "size": 9533,
       "mode": 420
     },
     {
@@ -44,7 +44,7 @@
     },
     {
       "path": "package.json",
-      "size": 3270,
+      "size": 3279,
       "mode": 420
     }
   ]
