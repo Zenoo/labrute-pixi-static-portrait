@@ -73,17 +73,4 @@ test('npm pack contains exactly the public entries, one dataset, and release doc
   const expected = [...require('../package.json').files, 'README.md', 'package.json'].sort();
   assert.deepEqual(pack.files.map((file) => file.path).sort(), expected);
   assert.ok(pack.size < 500000);
-  fs.mkdirSync('docs', { recursive: true });
-  fs.writeFileSync(
-    'docs/pack-results.json',
-    JSON.stringify(
-      {
-        size: pack.size,
-        unpackedSize: pack.unpackedSize,
-        files: pack.files,
-      },
-      null,
-      2,
-    ) + '\n',
-  );
 });
