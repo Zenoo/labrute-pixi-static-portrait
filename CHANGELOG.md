@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/Zenoo/labrute-pixi-static-portrait/compare/v1.1.0...v1.1.1) (2026-11-01)
+
+
+### Bug Fixes
+
+* Scale pen strokes with brute scale ([0c357a5](https://github.com/Zenoo/labrute-pixi-static-portrait/commit/0c357a56c98d633c038458fa0f3ce63825b219a9))
+
 ## [1.1.0](https://github.com/Zenoo/labrute-pixi-static-portrait/compare/v1.0.6...v1.1.0) (2026-11-01)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "labrute-pixi-static-portrait",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Static LaBrute character portraits for caller-owned PixiJS 8 renderers.",
   "main": "dist/Symbols.js",
   "module": "dist/Symbols.mjs",
