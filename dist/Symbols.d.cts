@@ -1574,7 +1574,7 @@ interface PortraitAppearance {
     facing?: Facing;
     scale?: number;
     highlightColorName?: ColorSlot;
-    /** Disable the intentional black outline and selection highlight for source comparisons. */
+    /** Disable the stroke minimum, black outline, and selection highlight for source comparisons. */
     presentation?: boolean;
     /** Disable the intentional turquoise iris enhancement for source comparisons. */
     recolorIrises?: boolean;

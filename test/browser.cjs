@@ -165,14 +165,10 @@ async function main() {
   const compiler = webpack(config);
   let moduleNames = [];
   compiler.hooks.done.tap('portrait-module-identity', (stats) => {
-    const walk = (modules) =>
-      (modules || []).flatMap((module) => [module.name || '', ...walk(module.modules)]);
-    moduleNames = walk(
-      stats.toJson({
-        all: false,
-        modules: true,
-        nestedModules: true,
-      }).modules,
+    // Read the graph directly: formatted stats can collapse modules into groups
+    // and omit the Pixi entry even though it is present in the compilation.
+    moduleNames = [...stats.compilation.modules].map(
+      (module) => module.resource || module.identifier(),
     );
   });
   const server = new DevServer(

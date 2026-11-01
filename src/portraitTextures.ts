@@ -108,9 +108,9 @@ export function clearPortraitCache(renderer: Renderer): void {
 }
 
 /** Coalesce matching asset requests while retaining a lease for each pending display. */
-export async function loadPortraitTexture(svg: Svg, resolution: number) {
+export async function loadPortraitTexture(svg: Svg, resolution: number, minimumPixels = 1) {
   const source = `data:image/svg+xml,${encodeURIComponent(
-    prepareSvg(svg.svg, resolution) + `<!-- portrait:${resolution} -->`,
+    prepareSvg(svg.svg, resolution, minimumPixels) + `<!-- portrait:${resolution} -->`,
   )}`;
   if (retiring.has(source)) {
     await retiring.get(source);
@@ -158,7 +158,7 @@ export async function loadPortraitTexture(svg: Svg, resolution: number) {
   if (texture.destroyed) {
     entry.borrowers--;
     bases.delete(source);
-    return loadPortraitTexture(svg, resolution);
+    return loadPortraitTexture(svg, resolution, minimumPixels);
   }
 
   let released = false;

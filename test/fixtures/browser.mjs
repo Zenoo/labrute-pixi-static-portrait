@@ -200,11 +200,6 @@ window.runPortraitTests = async (mode) => {
         presentation: false,
       });
       await d.ready;
-      const initial = d.svgs.map((s) => s.texture);
-      const eyeWhites = d.svgs
-        .filter((s) => /^Symbol(337|344)$/.test(s.label))
-        .map((s) => s.texture);
-      const loadedBeforeEdits = loads;
       const bounds = d.container.getLocalBounds();
       check(bounds.width > 150 && bounds.height > 350, 'Unexpected scale-3 portrait bounds');
       const left = renderer.extract.pixels(d.container);
@@ -226,6 +221,11 @@ window.runPortraitTests = async (mode) => {
       check(Math.abs(left.height - right.height) <= 1, 'Facing changes height');
       await d.updateAppearance({ ...config });
       const plain = renderer.extract.pixels(d.container);
+      const initial = d.svgs.map((s) => s.texture);
+      const eyeWhites = d.svgs
+        .filter((s) => /^Symbol(337|344)$/.test(s.label))
+        .map((s) => s.texture);
+      const loadedBeforeEdits = loads;
       const white = (pixels) =>
         pixels.reduce(
           (sum, v, i) =>

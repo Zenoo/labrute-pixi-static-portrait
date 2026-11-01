@@ -59,7 +59,7 @@ module.exports = (api, pixi) => {
     for (const request of requests) {
       const svg = decodeURIComponent(request.src.split(',')[1]);
       for (const match of svg.matchAll(/stroke-width="([\d.]+)"/g)) {
-        assert.ok(Number(match[1]) + 1e-9 >= 1 / request.data.resolution);
+        assert.ok(Number(match[1]) + 1e-9 >= 6 / request.data.resolution);
       }
     }
 
@@ -85,6 +85,54 @@ module.exports = (api, pixi) => {
     assert.ok(female.svgs.length > 10);
     female.destroy();
     pixi.Assets.load = load;
+  });
+  test('portrait hairlines scale with display size and DPR while source captures retain one texel', async () => {
+    const requests = [];
+    pixi.Assets.load = async (request) => {
+      requests.push(request);
+      return texture();
+    };
+    try {
+      for (const dpr of [1, 2]) {
+        for (const scale of [1, 3]) {
+          let styledTextures;
+          for (const presentation of [true, false]) {
+            requests.length = 0;
+            const d = new api.BruteDisplay({
+              renderer: { ...renderer, resolution: dpr },
+              ...appearance('female'),
+              scale,
+              presentation,
+            });
+            await d.ready;
+            let minimumSeen = false;
+            for (const request of requests) {
+              const svg = decodeURIComponent(request.src.split(',')[1]);
+              const expected = (presentation ? scale * dpr : 1) / request.data.resolution;
+              for (const match of svg.matchAll(/stroke-width="([\d.]+)"/g)) {
+                const width = Number(match[1]);
+                assert.ok(width + 1e-9 >= expected);
+                minimumSeen ||= Math.abs(width - expected) < 1e-9;
+              }
+            }
+            // Cached bases may satisfy the entire request. Check all rasterizations
+            // that did load, including at least one clamped source hairline.
+            if (requests.length) assert.ok(minimumSeen);
+            if (presentation) {
+              styledTextures = d.svgs.map((s) => s.texture);
+            } else if (scale * dpr > 1) {
+              assert.ok(
+                d.svgs.some((s, i) => s.texture !== styledTextures[i]),
+                'Source captures reused presentation stroke textures',
+              );
+            }
+            d.destroy();
+          }
+        }
+      }
+    } finally {
+      pixi.Assets.load = load;
+    }
   });
   test('superseded loads and destruction reject promptly and never create late sprites', async () => {
     const pending = [];

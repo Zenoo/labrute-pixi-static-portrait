@@ -48,7 +48,7 @@ Decode application body/color strings before construction. The package takes the
 | `facing` | `'left'` by default; `'right'` mirrors the authored portrait around its origin |
 | `scale` | Positive finite display scale, default `1`; production extraction uses `3` |
 | `highlightColorName` | Optional color slot with a white selection outline |
-| `presentation` | Default `true`: black outer outline and optional highlight. Set `false` for source fidelity captures. |
+| `presentation` | Default `true`: strokes at least one native portrait pixel wide, black outer outline, and optional highlight. Set `false` for source fidelity captures. |
 | `recolorIrises` | Default `true`: bind verified turquoise iris fills to `col3`. Set `false` for unmodified source eyes. |
 
 Selectors wrap modulo each selected child timeline's **complete** frame count, including empty frames. Other nested timelines remain at frame zero. The root stays at its initial portrait frame.
@@ -91,7 +91,7 @@ npm pack --dry-run --json
 
 `setup:swf` downloads FFDec **26.4.0** and verifies its archive SHA-256. Export also verifies the JAR checksum, including when `FFDEC_JAR` points to another installation. SWF display lists are decoded directly; FFDec exports vector SVG artwork. [Source provenance](src/swf/manifest.json) records the SWF hash, exporter, generator hashes, root mapping, and all timeline frame counts.
 
-The source is `src/swf/perso.swf`, a separate dataset from the fighter package. Symbol753's `sub` placements verify male **Symbol460** and female **Symbol752**. Definitions retain all source frames; the portrait API selects only the required initial/decoded frames. Selectors and effects belong to placements, repeated placements/frames share references, and SVG hair/eye strokes use FFDec's authored-width metadata plus a one-texture-pixel raster minimum. Raster resolution includes composed transforms, display scale, and renderer resolution.
+The source is `src/swf/perso.swf`, a separate dataset from the fighter package. Symbol753's `sub` placements verify male **Symbol460** and female **Symbol752**. Definitions retain all source frames; the portrait API selects only the required initial/decoded frames. Selectors and effects belong to placements, repeated placements/frames share references, and SVG hair/eye strokes use FFDec's authored-width metadata plus a one-native-portrait-pixel presentation minimum that scales with display size and renderer resolution. Source fidelity captures retain a one-texture-pixel raster minimum. Raster resolution includes composed transforms, display scale, and renderer resolution.
 
 Symbol45 is a source clip mask at depth 5 through 8 in Symbol57, rather than a generally hidden asset. Masks remain siblings in shared timeline space. Zero-alpha color transforms are retained. Colors use Flash additive offsets instead of blanket tint. Turquoise eye shapes **337/344** were verified in this source; their iris paths alone receive `col3`, preserving whites and outlines.
 

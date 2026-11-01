@@ -270,12 +270,12 @@ function createPlacementFilters(placement, color, scale = 1) {
     return filters;
 }
 
-/** Keep Flash's minimum stroke at one raster pixel, not one SVG coordinate unit. */
-function prepareSvg(svg, resolution) {
-    const minimumWidth = 1 / resolution;
+/** Express the portrait's minimum stroke in SVG units at the selected raster resolution. */
+function prepareSvg(svg, resolution, minimumPixels = 1) {
+    const minimumWidth = minimumPixels / resolution;
     // A hair/eye symbol may be magnified several times by its parent timelines.
-    // Preserve authored wider strokes, while rasterizing thinner ones as a single
-    // texel. Expanding them to 1 SVG unit would magnify their borders as well.
+    // Preserve authored wider strokes. The display supplies a minimum that scales
+    // with the portrait, independently of nested symbol magnification and DPR.
     return svg.replace(/\sstroke-width="([\d.]+)"/g, (_, width) => ` stroke-width="${Math.max(Number(width), minimumWidth)}"`);
 }
 
@@ -341,8 +341,8 @@ function clearPortraitCache(renderer) {
     prune(cacheFor(renderer), true);
 }
 /** Coalesce matching asset requests while retaining a lease for each pending display. */
-async function loadPortraitTexture(svg, resolution) {
-    const source = `data:image/svg+xml,${encodeURIComponent(prepareSvg(svg.svg, resolution) + `<!-- portrait:${resolution} -->`)}`;
+async function loadPortraitTexture(svg, resolution, minimumPixels = 1) {
+    const source = `data:image/svg+xml,${encodeURIComponent(prepareSvg(svg.svg, resolution, minimumPixels) + `<!-- portrait:${resolution} -->`)}`;
     if (retiring.has(source)) {
         await retiring.get(source);
     }
@@ -383,7 +383,7 @@ async function loadPortraitTexture(svg, resolution) {
     if (texture.destroyed) {
         entry.borrowers--;
         bases.delete(source);
-        return loadPortraitTexture(svg, resolution);
+        return loadPortraitTexture(svg, resolution, minimumPixels);
     }
     let released = false;
     return {
@@ -623,7 +623,10 @@ class BruteDisplay {
             // Base SVGs and colored variants have separate leases, both released with this scene.
             const addSvg = async (svg, parent, composed, color) => {
                 const resolution = portraitResolution(composed, this.renderer.resolution);
-                const loaded = await loadPortraitTexture(svg, resolution);
+                // Presentation hairlines stay one portrait unit wide when an extraction
+                // is enlarged or rendered on a high-DPI canvas, rather than one texel.
+                const minimumPixels = appearance.presentation === false ? 1 : scale * this.renderer.resolution;
+                const loaded = await loadPortraitTexture(svg, resolution, minimumPixels);
                 try {
                     current();
                 }

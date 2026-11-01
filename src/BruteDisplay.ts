@@ -199,7 +199,11 @@ export class BruteDisplay {
       // Base SVGs and colored variants have separate leases, both released with this scene.
       const addSvg = async (svg: Svg, parent: Container, composed: Matrix, color?: string) => {
         const resolution = portraitResolution(composed, this.renderer.resolution);
-        const loaded = await loadPortraitTexture(svg, resolution);
+        // Presentation hairlines stay one portrait unit wide when an extraction
+        // is enlarged or rendered on a high-DPI canvas, rather than one texel.
+        const minimumPixels =
+          appearance.presentation === false ? 1 : scale * this.renderer.resolution;
+        const loaded = await loadPortraitTexture(svg, resolution, minimumPixels);
         try {
           current();
         } catch (error) {
