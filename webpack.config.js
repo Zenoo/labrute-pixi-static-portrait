@@ -16,7 +16,7 @@ module.exports = () => ({
   plugins: [new HtmlWebpackPlugin({ template: 'test/index.html' })],
   devServer: {
     host: '127.0.0.1',
-    port: 3000,
+    port: 3001,
     static: [
       {
         directory: path.resolve(__dirname, 'node_modules/@ruffle-rs/ruffle'),

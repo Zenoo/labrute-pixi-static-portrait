@@ -102,7 +102,7 @@ npm run build
 npm run playground
 ```
 
-Open `http://localhost:3000`. The playground imports the public `BruteDisplay` and accepts the same appearance strings as the fighter playground: **11 hexadecimal body digits** and **32 decimal color digits** (two palette-index digits per color slot). Complete inputs apply automatically; incomplete edits leave the last valid portrait visible. Individual body controls update the body string. Color pickers can override the imported palette without changing the last imported color string.
+Open `http://localhost:3001`. The playground imports the public `BruteDisplay` and accepts the same appearance strings as the fighter playground: **11 hexadecimal body digits** and **32 decimal color digits** (two palette-index digits per color slot). Complete inputs apply automatically; incomplete edits leave the last valid portrait visible. Individual body controls update the body string. Color pickers can override the imported palette without changing the last imported color string.
 
 The playground also supports source-derived body choices and coordinated outfits, both genders, facing, scale, highlights, background previews, and transparent PNG download. Basic/detailed presets are deduplicated by checking source placements across body builds. String decoding lives in `test/appearanceStrings.mjs`; the package API continues to accept decoded appearance objects.
 
