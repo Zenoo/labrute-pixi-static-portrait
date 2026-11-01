@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.0](https://github.com/Zenoo/labrute-pixi-static-portrait/compare/v1.0.6...v1.1.0) (2026-11-01)
+
+
+### Features
+
+* Use SWF to generate symbol data + New test playground ([fdbd635](https://github.com/Zenoo/labrute-pixi-static-portrait/commit/fdbd6353a80647e881a4c90aaaa7eb201abe6989))
+
+
+### Bug Fixes
+
+* Change default port ([51dd6bd](https://github.com/Zenoo/labrute-pixi-static-portrait/commit/51dd6bd9e15c569ad08f52c302fab5395c0f09c9))
+* Deploy ([e13a09d](https://github.com/Zenoo/labrute-pixi-static-portrait/commit/e13a09dd24e6fc87947ab74880427559150165b1))
+* Remove pack results after deploying ([0dd05e7](https://github.com/Zenoo/labrute-pixi-static-portrait/commit/0dd05e72244b78d384935b28b1c8df881f252913))
+* Rename repo ([6beff1a](https://github.com/Zenoo/labrute-pixi-static-portrait/commit/6beff1a3468694960a05fa2341581c20f7c3c1f0))
+
 ## [1.0.6](https://github.com/Zenoo/labrute-static-fla-parser/compare/v1.0.5...v1.0.6) (2024-07-11)
 
 
